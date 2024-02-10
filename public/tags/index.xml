@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Home</title>
+    <link>https://jchai01.github.io/tags/</link>
+    <description>Recent content in Tags on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Feb 2024 02:04:09 +0000</lastBuildDate>
+    <atom:link href="https://jchai01.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>automation</title>
+      <link>https://jchai01.github.io/tags/automation/</link>
+      <pubDate>Sat, 10 Feb 2024 02:04:09 +0000</pubDate>
+      <guid>https://jchai01.github.io/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://jchai01.github.io/tags/linux/</link>
+      <pubDate>Sat, 10 Feb 2024 02:04:09 +0000</pubDate>
+      <guid>https://jchai01.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xdotool</title>
+      <link>https://jchai01.github.io/tags/xdotool/</link>
+      <pubDate>Sat, 10 Feb 2024 02:04:09 +0000</pubDate>
+      <guid>https://jchai01.github.io/tags/xdotool/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://jchai01.github.io/tags/python/</link>
+      <pubDate>Thu, 11 Jan 2024 15:27:40 +0000</pubDate>
+      <guid>https://jchai01.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FFMPEG</title>
+      <link>https://jchai01.github.io/tags/ffmpeg/</link>
+      <pubDate>Wed, 03 Jan 2024 02:47:17 +0000</pubDate>
+      <guid>https://jchai01.github.io/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blender</title>
+      <link>https://jchai01.github.io/tags/blender/</link>
+      <pubDate>Tue, 02 Jan 2024 19:52:20 +0000</pubDate>
+      <guid>https://jchai01.github.io/tags/blender/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>davinci-resolve</title>
+      <link>https://jchai01.github.io/tags/davinci-resolve/</link>
+      <pubDate>Tue, 26 Dec 2023 22:38:32 +0000</pubDate>
+      <guid>https://jchai01.github.io/tags/davinci-resolve/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
