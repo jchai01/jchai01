@@ -1,3 +1,8 @@
+### CREATE NEW POST
+```bash
+hugo new posts/name-of-post.md
+```
+
 ### RUN ON LOCALHOST
 ```bash
 hugo server
