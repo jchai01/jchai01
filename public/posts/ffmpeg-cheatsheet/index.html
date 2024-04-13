@@ -13,20 +13,21 @@
 
 
 <meta name="author" content="Joseph Chai">
-<meta name="description" content="Changing Aspect Ratio Link to heading Resizing a video from 4:3 to 16:9 (HD, 1280 x 720) for max screen size, with no cropping and addition of black padding
+<meta name="description" content="Changing Aspect Ratio  Link to heading   Resizing a video from 4:3 to 16:9 (HD, 1280 x 720) for max screen size, with no cropping and addition of black padding
 ffmpeg -i input.mp4 -vf &#34;scale=(iw*sar)*min(1280/(iw*sar)\,720/ih):ih*min(1280/(iw*sar)\,720/ih),pad=1280:720:(ow-iw)/2:(oh-ih)/2:black&#34; output.mp4 Explanation: *scale = FFMPEG video filter to resize a video
-(iw*sar)min(1280/(iwsar),720/ih) = output width of the resized video = Resize width of video to AT MOST 1280 (keeping original aspect ratio) ihmin(1280/(iwsar),720/ih) = output height of the resized video = Resize width of video to AT MOST 720 (keeping original aspect ratio) The scale transformation is then followed (chained) by a pad video filter:">
+ (iw*sar)min(1280/(iwsar),720/ih) = output width of the resized video = Resize width of video to AT MOST 1280 (keeping original aspect ratio) ihmin(1280/(iwsar),720/ih) = output height of the resized video = Resize width of video to AT MOST 720 (keeping original aspect ratio)  The scale transformation is then followed (chained) by a pad video filter:">
 <meta name="keywords" content="blog,developer,personal">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="FFMPEG cheatsheet"/>
-<meta name="twitter:description" content="Changing Aspect Ratio Link to heading Resizing a video from 4:3 to 16:9 (HD, 1280 x 720) for max screen size, with no cropping and addition of black padding
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="FFMPEG cheatsheet"/>
+<meta name="twitter:description" content="Changing Aspect Ratio  Link to heading   Resizing a video from 4:3 to 16:9 (HD, 1280 x 720) for max screen size, with no cropping and addition of black padding
 ffmpeg -i input.mp4 -vf &#34;scale=(iw*sar)*min(1280/(iw*sar)\,720/ih):ih*min(1280/(iw*sar)\,720/ih),pad=1280:720:(ow-iw)/2:(oh-ih)/2:black&#34; output.mp4 Explanation: *scale = FFMPEG video filter to resize a video
-(iw*sar)min(1280/(iwsar),720/ih) = output width of the resized video = Resize width of video to AT MOST 1280 (keeping original aspect ratio) ihmin(1280/(iwsar),720/ih) = output height of the resized video = Resize width of video to AT MOST 720 (keeping original aspect ratio) The scale transformation is then followed (chained) by a pad video filter:"/>
+ (iw*sar)min(1280/(iwsar),720/ih) = output width of the resized video = Resize width of video to AT MOST 1280 (keeping original aspect ratio) ihmin(1280/(iwsar),720/ih) = output height of the resized video = Resize width of video to AT MOST 720 (keeping original aspect ratio)  The scale transformation is then followed (chained) by a pad video filter:"/>
 
 <meta property="og:title" content="FFMPEG cheatsheet" />
-<meta property="og:description" content="Changing Aspect Ratio Link to heading Resizing a video from 4:3 to 16:9 (HD, 1280 x 720) for max screen size, with no cropping and addition of black padding
+<meta property="og:description" content="Changing Aspect Ratio  Link to heading   Resizing a video from 4:3 to 16:9 (HD, 1280 x 720) for max screen size, with no cropping and addition of black padding
 ffmpeg -i input.mp4 -vf &#34;scale=(iw*sar)*min(1280/(iw*sar)\,720/ih):ih*min(1280/(iw*sar)\,720/ih),pad=1280:720:(ow-iw)/2:(oh-ih)/2:black&#34; output.mp4 Explanation: *scale = FFMPEG video filter to resize a video
-(iw*sar)min(1280/(iwsar),720/ih) = output width of the resized video = Resize width of video to AT MOST 1280 (keeping original aspect ratio) ihmin(1280/(iwsar),720/ih) = output height of the resized video = Resize width of video to AT MOST 720 (keeping original aspect ratio) The scale transformation is then followed (chained) by a pad video filter:" />
+ (iw*sar)min(1280/(iwsar),720/ih) = output width of the resized video = Resize width of video to AT MOST 1280 (keeping original aspect ratio) ihmin(1280/(iwsar),720/ih) = output height of the resized video = Resize width of video to AT MOST 720 (keeping original aspect ratio)  The scale transformation is then followed (chained) by a pad video filter:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jchai01.github.io/posts/ffmpeg-cheatsheet/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-01-03T02:47:17+00:00" />
@@ -117,6 +118,10 @@ ffmpeg -i input.mp4 -vf &#34;scale=(iw*sar)*min(1280/(iw*sar)\,720/ih):ih*min(12
             </li>
           
             <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
               <a class="navigation-link" href="/about/">About</a>
             </li>
           
@@ -158,7 +163,11 @@ ffmpeg -i input.mp4 -vf &#34;scale=(iw*sar)*min(1280/(iw*sar)\,720/ih):ih*min(12
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="/tags/ffmpeg/">FFMPEG</a>
+      <a href="/tags/ffmpeg/">ffmpeg</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/cheatsheet/">cheatsheet</a>
     </span></div>
 
         </div>
@@ -174,8 +183,8 @@ ffmpeg -i input.mp4 -vf &#34;scale=(iw*sar)*min(1280/(iw*sar)\,720/ih):ih*min(12
   </a>
 </h3>
 <p>Resizing a video from 4:3 to 16:9 (HD, 1280 x 720) for max screen size, with no cropping and addition of black padding</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ffmpeg -i input.mp4 -vf <span style="color:#a5d6ff">&#34;scale=(iw*sar)*min(1280/(iw*sar)\,720/ih):ih*min(1280/(iw*sar)\,720/ih),pad=1280:720:(ow-iw)/2:(oh-ih)/2:black&#34;</span> output.mp4
-</span></span></code></pre></div><p>Explanation:
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ffmpeg -i input.mp4 -vf <span style="color:#0ff;font-weight:bold">&#34;scale=(iw*sar)*min(1280/(iw*sar)\,720/ih):ih*min(1280/(iw*sar)\,720/ih),pad=1280:720:(ow-iw)/2:(oh-ih)/2:black&#34;</span> output.mp4
+</code></pre></div><p>Explanation:
 *scale = FFMPEG video filter to resize a video</p>
 <ul>
 <li>(iw*sar)<em>min(1280/(iw</em>sar),720/ih) = output width of the resized video = Resize width of video to AT MOST 1280 (keeping original aspect ratio)</li>
@@ -189,8 +198,8 @@ ffmpeg -i input.mp4 -vf &#34;scale=(iw*sar)*min(1280/(iw*sar)\,720/ih):ih*min(12
 <li>black = the padding color</li>
 </ul>
 <p>Resizing a video from 4:3 to 1:1 (Instagram format) for maximum screen size, with no cropping and addition blue padding</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ffmpeg -i input.mp4 -vf <span style="color:#a5d6ff">&#34;scale=(iw*sar)*max(1280/(iw*sar)\,720/ih):ih*max(1280/(iw*sar)\,720/ih),pad=1280:1280:(ow-iw)/2:(oh-ih)/2:blue&#34;</span> output02.mp4
-</span></span></code></pre></div><p>with:
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ffmpeg -i input.mp4 -vf <span style="color:#0ff;font-weight:bold">&#34;scale=(iw*sar)*max(1280/(iw*sar)\,720/ih):ih*max(1280/(iw*sar)\,720/ih),pad=1280:1280:(ow-iw)/2:(oh-ih)/2:blue&#34;</span> output02.mp4
+</code></pre></div><p>with:
 *scale = FFMPEG video filter to resize a video</p>
 <ul>
 <li>(iw*sar)<em>max(1280/(iw</em>sar),720/ih) = output width of the resized video = Resize width of video to AT LEAST 1280 (keeping original aspect ratio)</li>
@@ -267,7 +276,7 @@ ffmpeg -i input.mp4 -vf &#34;scale=(iw*sar)*min(1280/(iw*sar)\,720/ih):ih*min(12
 
   
   
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  <script src="/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js" integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D&#43;Uk="></script>
   
 
   

@@ -57,6 +57,11 @@ style = "github-dark"
 #   icon = "fa fa-twitter fa-2x"
 #   weight = 3
 #   url = "https://twitter.com/johndoe/"
+[[params.social]]
+name = "LinkedIn"
+icon = "fa fa-2x fa-linkedin"
+weight = 2
+url = "https://www.linkedin.com/in/joseph-chai-163b6695/"
 
 # Menu links
 [[menu.main]]
@@ -64,6 +69,10 @@ style = "github-dark"
   weight = 1
   url  = "posts/"
 [[menu.main]]
-  name = "About"
+  name = "Projects"
   weight = 2
+  url = "projects/"
+[[menu.main]]
+  name = "About"
+  weight = 3
   url = "about/"

@@ -6,105 +6,168 @@
     <description>Recent content in Posts on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Feb 2024 02:04:09 +0000</lastBuildDate>
-    <atom:link href="https://jchai01.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Feb 2024 02:04:09 +0000</lastBuildDate><atom:link href="https://jchai01.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Xdotool script examples</title>
       <link>https://jchai01.github.io/posts/xdodool-scripts-example/</link>
       <pubDate>Sat, 10 Feb 2024 02:04:09 +0000</pubDate>
+      
       <guid>https://jchai01.github.io/posts/xdodool-scripts-example/</guid>
-      <description>Xdotool is an automation tool in Linux, something like AutoHotKey (AHK) for Windows. Below show some examples of it&amp;rsquo;s usage in a shell script.&#xA;# Type ABC xdotool key A xdotool key B xdotool key C # Tab 3 times xdotool key Tab xdotool key Tab xdotool key Tab # Type 20 xdotool key 2 xdotool key 0 xdotool key Down xdotool key Left xdotool key Right xdotool key Return # Use sleep to wait sleep 0.</description>
+      <description>Xdotool is an automation tool in Linux, something like AutoHotKey (AHK) for Windows. Below show some examples of it&amp;rsquo;s usage in a shell script.
+# Type ABC xdotool key A xdotool key B xdotool key C # Tab 3 times xdotool key Tab xdotool key Tab xdotool key Tab # Type 20 xdotool key 2 xdotool key 0 xdotool key Down xdotool key Left xdotool key Right xdotool key Return # Use sleep to wait sleep 0.</description>
     </item>
+    
     <item>
-      <title>Best Sideloaded Android Apps</title>
+      <title>Best sideloaded Android apps</title>
       <link>https://jchai01.github.io/posts/best-sideloaded-android-apps/</link>
       <pubDate>Thu, 11 Jan 2024 15:55:06 +0000</pubDate>
+      
       <guid>https://jchai01.github.io/posts/best-sideloaded-android-apps/</guid>
-      <description>ReVanced Manager/YouTube ReVanced Link to heading Removes ads on YouTube App, enables play in background feature. Able to patch various other app too via ReVanced Manager.&#xA;Fastest way:&#xA;Visit: https://revanced.net/&#xA;Download APK file for YouTube ReVanced and MicroG and install them. (MicroG makes it possible for you to log into your google account with ReVanced)&#xA;Patch the app yourself (get APK files from APKMirror):&#xA;https://github.com/ReVanced/revanced-manager&#xA;xManager Link to heading Ad-free Spotify patch:</description>
+      <description>It&amp;rsquo;s time to celebrate the biggest advantage of Android devices, sideloading!
+ReVanced Manager/YouTube ReVanced  Link to heading   Removes ads on YouTube App, enables play in background feature. Able to patch various other app too via ReVanced Manager.
+Fastest way:
+Visit: https://revanced.net/
+Download APK file for YouTube ReVanced and MicroG and install them. (MicroG makes it possible for you to log into your google account with ReVanced)
+Patch the app yourself (get APK files from APKMirror):</description>
     </item>
+    
     <item>
       <title>Python Cheatsheet</title>
       <link>https://jchai01.github.io/posts/python-cheatsheet/</link>
       <pubDate>Thu, 11 Jan 2024 15:27:40 +0000</pubDate>
+      
       <guid>https://jchai01.github.io/posts/python-cheatsheet/</guid>
-      <description>Virtual Environment Link to heading In this example, folder for the Virtual Environment is .venv&#xA;python3 -m venv .venv source .venv/bin/activate deactivate Packages Link to heading pip install name-of-package pip uninstall name-of-package pip install -r requirements.txt pyenv Link to heading Manage different versions of python.&#xA;List all version installed:&#xA;pyenv versions Switch to a particular version example:&#xA;pyenv global 3.8 Reset back to default:&#xA;pyenv global system List all version available for install:</description>
+      <description>Virtual Environment  Link to heading   In this example, folder for the Virtual Environment is .venv
+python3 -m venv .venv source .venv/bin/activate deactivate Packages  Link to heading   pip install name-of-package pip uninstall name-of-package pip install -r requirements.txt pyenv  Link to heading   Manage different versions of python.
+List all version installed:
+pyenv versions Switch to a particular version example:
+pyenv global 3.8 Reset back to default:</description>
     </item>
+    
     <item>
       <title>Automate Image Resize with Padding using ImageMagick</title>
       <link>https://jchai01.github.io/posts/automate-image-resize-with-padding-using-imagemagick/</link>
       <pubDate>Wed, 03 Jan 2024 02:53:14 +0000</pubDate>
+      
       <guid>https://jchai01.github.io/posts/automate-image-resize-with-padding-using-imagemagick/</guid>
-      <description>#!/bin/sh # This script requires the download imagemagick. image_dir=$1 # First argument target_ratio=&amp;#34;1280x960&amp;#34; if [ -z $image_dir ]; then echo &amp;#34;Please provide image directory as first argument.&amp;#34; exit 1 fi if [ ! -d $image_dir ]; then echo &amp;#34;Not a valid directory&amp;#34; exit 1 fi output_dir=&amp;#34;$image_dir-output&amp;#34; echo &amp;#34;Located $image_dir&amp;#34; echo &amp;#34;Creating output $output_dir&amp;#34; mkdir $output_dir for image in $image_dir/*; do echo &amp;#34;Processing $image&amp;#34; file_name=$(basename $image) # convert -bordercolor white -border 100 -gravity center -resize 1200x1200 -extent 1200x1200 $image $output_dir/$file_name convert -background black -gravity center -resize $target_ratio -extent $target_ratio $image $output_dir/$file_name done Resize Images Link to heading Basic usage (will overwrite the original file):</description>
+      <description>Github link: https://github.com/jchai01/resize-photo-script
+#!/bin/sh # This script requires imagemagick. image_dir=$1 target_ratio=&amp;#34;1080x1080&amp;#34; if [ -z &amp;#34;$image_dir&amp;#34; ]; then echo &amp;#34;Please provide image directory as first argument.&amp;#34; exit 1 fi if [ ! -d &amp;#34;$image_dir&amp;#34; ]; then echo &amp;#34;Not a valid directory&amp;#34; exit 1 fi output_dir=&amp;#34;$image_dir-output&amp;#34; echo &amp;#34;Located $image_dir&amp;#34; echo &amp;#34;Creating output $output_dir&amp;#34; mkdir &amp;#34;$output_dir&amp;#34; for image in &amp;#34;$image_dir&amp;#34;/*; do echo &amp;#34;Processing $image&amp;#34; file_name=$(basename &amp;#34;$image&amp;#34;) # convert -bordercolor white -border 100 -gravity center -resize 1200x1200 -extent 1200x1200 $image $output_dir/$file_name convert -background black -gravity center -resize $target_ratio -extent $target_ratio &amp;#34;$image&amp;#34; &amp;#34;$output_dir&amp;#34;/&amp;#34;$file_name&amp;#34; done Resize Images  Link to heading   Basic usage (will overwrite the original file):</description>
     </item>
+    
     <item>
       <title>FFMPEG cheatsheet</title>
       <link>https://jchai01.github.io/posts/ffmpeg-cheatsheet/</link>
       <pubDate>Wed, 03 Jan 2024 02:47:17 +0000</pubDate>
+      
       <guid>https://jchai01.github.io/posts/ffmpeg-cheatsheet/</guid>
-      <description>Changing Aspect Ratio Link to heading Resizing a video from 4:3 to 16:9 (HD, 1280 x 720) for max screen size, with no cropping and addition of black padding&#xA;ffmpeg -i input.mp4 -vf &amp;#34;scale=(iw*sar)*min(1280/(iw*sar)\,720/ih):ih*min(1280/(iw*sar)\,720/ih),pad=1280:720:(ow-iw)/2:(oh-ih)/2:black&amp;#34; output.mp4 Explanation: *scale = FFMPEG video filter to resize a video&#xA;(iw*sar)min(1280/(iwsar),720/ih) = output width of the resized video = Resize width of video to AT MOST 1280 (keeping original aspect ratio) ihmin(1280/(iwsar),720/ih) = output height of the resized video = Resize width of video to AT MOST 720 (keeping original aspect ratio) The scale transformation is then followed (chained) by a pad video filter:</description>
+      <description>Changing Aspect Ratio  Link to heading   Resizing a video from 4:3 to 16:9 (HD, 1280 x 720) for max screen size, with no cropping and addition of black padding
+ffmpeg -i input.mp4 -vf &amp;#34;scale=(iw*sar)*min(1280/(iw*sar)\,720/ih):ih*min(1280/(iw*sar)\,720/ih),pad=1280:720:(ow-iw)/2:(oh-ih)/2:black&amp;#34; output.mp4 Explanation: *scale = FFMPEG video filter to resize a video
+ (iw*sar)min(1280/(iwsar),720/ih) = output width of the resized video = Resize width of video to AT MOST 1280 (keeping original aspect ratio) ihmin(1280/(iwsar),720/ih) = output height of the resized video = Resize width of video to AT MOST 720 (keeping original aspect ratio)  The scale transformation is then followed (chained) by a pad video filter:</description>
     </item>
+    
     <item>
       <title>Installing Blender manually in Linux</title>
       <link>https://jchai01.github.io/posts/installing-blender-via-zip-folder/</link>
       <pubDate>Tue, 02 Jan 2024 19:52:20 +0000</pubDate>
+      
       <guid>https://jchai01.github.io/posts/installing-blender-via-zip-folder/</guid>
-      <description>Sometimes the package manager does not give you the lastest version of the software. This guide shows you how to install Blender manually without the use of package manager in order to get the lastest version. I am using Ubuntu in this example.&#xA;Download the zip file from Blender website. Unzip the file.&#xA;Copy the extracted folder to somewhere else if you want to. For me I placed them in /opt folder.</description>
+      <description>Sometimes the package manager does not give you the lastest version of the software. This guide shows you how to install Blender manually without the use of package manager in order to get the lastest version. I am using Ubuntu in this example.
+  Download the zip file from Blender website. Unzip the file.
+  Copy the extracted folder to somewhere else if you want to. For me I placed them in /opt folder.</description>
     </item>
+    
     <item>
       <title>Toggle night light in Ubuntu</title>
       <link>https://jchai01.github.io/posts/toggle-night-light-in-ubuntu/</link>
       <pubDate>Tue, 26 Dec 2023 22:58:22 +0000</pubDate>
+      
       <guid>https://jchai01.github.io/posts/toggle-night-light-in-ubuntu/</guid>
-      <description>Make night light always on https://askubuntu.com/questions/1087449/force-gnome-night-light-to-stay-on-and-never-turn-off&#xA;Add custom shortcut to toggle night light https://www.reddit.com/r/gnome/comments/ig7wsk/a_keyboard_shortcut_to_toggle_nightlight_in_gnome/</description>
+      <description>Set night light to always on  Link to heading    Install dconf-editor:  sudo apt install dconf-editor Open dconf-editor and navigate to the key/org/gnome/settings-daemon/plugins/color/ Set night-light-schedule-automatic to false Set night-light-schedule-from to 0, and night-light-schedule-to to 24 (or any value higher than this)  ref: link
+Add custom shortcut to toggle night light  Link to heading   Use the following script:
+bash -c &amp;#34;if [[ $(gsettings get org.</description>
     </item>
+    
     <item>
-      <title>Setup latest NeoVim on ubuntu with AppImage</title>
+      <title>Setup latest NeoVim on Ubuntu with AppImage</title>
       <link>https://jchai01.github.io/posts/neovim-setup-on-ubuntu/</link>
       <pubDate>Tue, 26 Dec 2023 22:57:27 +0000</pubDate>
+      
       <guid>https://jchai01.github.io/posts/neovim-setup-on-ubuntu/</guid>
-      <description>Download NeoVim AppImage from GitHub release page.&#xA;Rename nvim.appimage to nvim&#xA;mv nvim.appimage nvim Set the permission:&#xA;chmod +x nvim Install fuse2 library if it is required to run the appimage&#xA;sudo apt install libfuse2 Copy from download folder to /usr/local/bin path /usr/bin is used for apps managed by the distribution&amp;rsquo;s package manager, so it&amp;rsquo;s not recommended to copy there.&#xA;sudo mv nvim /usr/local/bin Optional Link to heading Install AstroVim</description>
+      <description>Download NeoVim AppImage from GitHub release page.
+Rename nvim.appimage to nvim
+mv nvim.appimage nvim Set the permission:
+chmod +x nvim Install fuse2 library if it is required to run the appimage
+sudo apt install libfuse2 Copy from download folder to /usr/local/bin path /usr/bin is used for apps managed by the distribution&amp;rsquo;s package manager, so it&amp;rsquo;s not recommended to copy there.
+sudo mv nvim /usr/local/bin Optional  Link to heading   Install AstroVim</description>
     </item>
+    
     <item>
       <title>I3 configuration</title>
       <link>https://jchai01.github.io/posts/i3-configuration/</link>
       <pubDate>Tue, 26 Dec 2023 22:45:57 +0000</pubDate>
+      
       <guid>https://jchai01.github.io/posts/i3-configuration/</guid>
-      <description>My attempt on switching to a window manager (I3). I was on a pretty old laptop (GL752V), probably why I faced a handful of issues. Distro used: EndeavourOS.&#xA;config file path:&#xA;~/.config/i3/config Changes made:&#xA;Change open file explorer from ctrl+n to ctrl+e Make brightness key work. (See fix i3wm brightness) Resize feature with mod + ctrl + arrow keys. Ensure power button work. Make alt+F4 work as well, other than $mod + q.</description>
+      <description>My attempt on switching to a window manager (I3). I was on a pretty old laptop (GL752V), probably why I faced a handful of issues. Distro used: EndeavourOS.
+config file path:
+~/.config/i3/config Changes made:
+ Change open file explorer from ctrl+n to ctrl+e Make brightness key work. (See fix i3wm brightness) Resize feature with mod + ctrl + arrow keys. Ensure power button work. Make alt+F4 work as well, other than $mod + q.</description>
     </item>
+    
     <item>
       <title>Google search highlighted text</title>
       <link>https://jchai01.github.io/posts/google-search-highlighted-text/</link>
       <pubDate>Tue, 26 Dec 2023 22:42:42 +0000</pubDate>
+      
       <guid>https://jchai01.github.io/posts/google-search-highlighted-text/</guid>
-      <description>#!/bin/bash # Google search the highlighted text (requires: xdg-utils, xsel) xdg-open &amp;#34;[https://google.com/search?q=$(xsel)](https://google.com/search?q=$(xsel))&amp;#34; Bind it to a shortcut key, mine is super + s.&#xA;/home/user/Desktop/scripts/google-search.sh </description>
+      <description>#!/bin/bash  # Google search the highlighted text (requires: xdg-utils, xsel) xdg-open &amp;#34;[https://google.com/search?q=$(xsel)](https://google.com/search?q=$(xsel))&amp;#34; Bind it to a shortcut key, mine is super + s.
+/home/user/Desktop/scripts/google-search.sh </description>
     </item>
+    
     <item>
       <title>Davinci Resolve Shortcut Mappings</title>
       <link>https://jchai01.github.io/posts/davinci-resolve-shortcut-mappings/</link>
       <pubDate>Tue, 26 Dec 2023 22:38:32 +0000</pubDate>
+      
       <guid>https://jchai01.github.io/posts/davinci-resolve-shortcut-mappings/</guid>
-      <description>CTRL + ALT + K to access preference.&#xA;Split Change from Ctrl + \ to “S”&#xA;Start to playhead and End to playhead. CTRL + SHIFT + [ to “Q” and “W”&#xA;Remember to remove keybindings for the affected shortcut.</description>
+      <description>Access the preference menu  Link to heading   ctrl + alt + k to access preference menu.
+Changes  Link to heading     Split clips: change from ctrl + \ to s
+  Start to playhead and end to playhead: ctrl + shift + [ and ctrl + shift + ] to q and w respectively.
+  Note  Link to heading    Remember to remove keybindings for any affected shortcut.</description>
     </item>
+    
     <item>
       <title>Resolve HEVC (H265) In Davinci Resolve</title>
       <link>https://jchai01.github.io/posts/resolve-hevc-in-davinci-resolve/</link>
       <pubDate>Mon, 25 Dec 2023 00:04:48 +0000</pubDate>
+      
       <guid>https://jchai01.github.io/posts/resolve-hevc-in-davinci-resolve/</guid>
-      <description>Download the HEVC extension and install it from: https://drive.google.com/drive/folders/19FWeAVWFoZUaM-14Wbt3t9lb_bIprl8b&#xA;Press Win + R on your keyboard to launch the Run dialog box.Type WSReset.exe in the dialog box and press Enter.&#xA;Open Microsoft Store, click the Library icon. This will be on the left side of the Store app.Check for Microsoft Store Updates.&#xA;Click the Get updates button to check for available updates.If updates are available, click Update all to download and install them.</description>
+      <description>Download the HEVC extension and install it from: https://drive.google.com/drive/folders/19FWeAVWFoZUaM-14Wbt3t9lb_bIprl8b Press Win + R on your keyboard to launch the Run dialog box.Type WSReset.exe in the dialog box and press Enter. Open Microsoft Store, click the Library icon. This will be on the left side of the Store app.Check for Microsoft Store Updates. Click the Get updates button to check for available updates.If updates are available, click Update all to download and install them.</description>
     </item>
+    
     <item>
       <title>Change Timezone in Linux</title>
       <link>https://jchai01.github.io/posts/change-timezone-in-linux/</link>
       <pubDate>Sun, 24 Dec 2023 23:58:39 +0000</pubDate>
+      
       <guid>https://jchai01.github.io/posts/change-timezone-in-linux/</guid>
-      <description>View current timezone:&#xA;timedatectl List timezones:&#xA;timedatectl list-timezones Change timezone example:&#xA;sudo timedatectl set-timezone Europe/Dublin </description>
+      <description>View current timezone:
+timedatectl List timezones:
+timedatectl list-timezones Change timezone example:
+sudo timedatectl set-timezone Europe/Dublin </description>
     </item>
+    
     <item>
       <title>Automount Windows drive in Linux</title>
       <link>https://jchai01.github.io/posts/mount-windows-drive-in-linux/</link>
       <pubDate>Sun, 24 Dec 2023 23:10:09 +0000</pubDate>
+      
       <guid>https://jchai01.github.io/posts/mount-windows-drive-in-linux/</guid>
-      <description>Find out where the windows drive is located:&#xA;lsblk Edit fstab file:&#xA;sudo nvim /etc/fstab For example, sdb2:&#xA;# &amp;lt;file system&amp;gt; &amp;lt;mount point&amp;gt; &amp;lt;type&amp;gt; &amp;lt;options&amp;gt; &amp;lt;dump&amp;gt; &amp;lt;pass&amp;gt;``` /dev/sdb2 /media/data ntfs defaults 0 0 Reboot the system:&#xA;reboot Create a launcher.</description>
+      <description>Find out where the windows drive is located:
+lsblk Edit fstab file:
+sudo nvim /etc/fstab For example, sdb2:
+# &amp;lt;file system&amp;gt; &amp;lt;mount point&amp;gt; &amp;lt;type&amp;gt; &amp;lt;options&amp;gt; &amp;lt;dump&amp;gt; &amp;lt;pass&amp;gt;``` /dev/sdb2 /media/data ntfs defaults 0 0 Reboot the system:
+reboot Create a launcher.</description>
     </item>
+    
   </channel>
 </rss>

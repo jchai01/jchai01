@@ -16,20 +16,21 @@
 <meta name="description" content="My attempt on switching to a window manager (I3). I was on a pretty old laptop (GL752V), probably why I faced a handful of issues. Distro used: EndeavourOS.
 config file path:
 ~/.config/i3/config Changes made:
-Change open file explorer from ctrl&#43;n to ctrl&#43;e Make brightness key work. (See fix i3wm brightness) Resize feature with mod &#43; ctrl &#43; arrow keys. Ensure power button work. Make alt&#43;F4 work as well, other than $mod &#43; q.">
+ Change open file explorer from ctrl&#43;n to ctrl&#43;e Make brightness key work. (See fix i3wm brightness) Resize feature with mod &#43; ctrl &#43; arrow keys. Ensure power button work. Make alt&#43;F4 work as well, other than $mod &#43; q.">
 <meta name="keywords" content="blog,developer,personal">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="I3 configuration"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="I3 configuration"/>
 <meta name="twitter:description" content="My attempt on switching to a window manager (I3). I was on a pretty old laptop (GL752V), probably why I faced a handful of issues. Distro used: EndeavourOS.
 config file path:
 ~/.config/i3/config Changes made:
-Change open file explorer from ctrl&#43;n to ctrl&#43;e Make brightness key work. (See fix i3wm brightness) Resize feature with mod &#43; ctrl &#43; arrow keys. Ensure power button work. Make alt&#43;F4 work as well, other than $mod &#43; q."/>
+ Change open file explorer from ctrl&#43;n to ctrl&#43;e Make brightness key work. (See fix i3wm brightness) Resize feature with mod &#43; ctrl &#43; arrow keys. Ensure power button work. Make alt&#43;F4 work as well, other than $mod &#43; q."/>
 
 <meta property="og:title" content="I3 configuration" />
 <meta property="og:description" content="My attempt on switching to a window manager (I3). I was on a pretty old laptop (GL752V), probably why I faced a handful of issues. Distro used: EndeavourOS.
 config file path:
 ~/.config/i3/config Changes made:
-Change open file explorer from ctrl&#43;n to ctrl&#43;e Make brightness key work. (See fix i3wm brightness) Resize feature with mod &#43; ctrl &#43; arrow keys. Ensure power button work. Make alt&#43;F4 work as well, other than $mod &#43; q." />
+ Change open file explorer from ctrl&#43;n to ctrl&#43;e Make brightness key work. (See fix i3wm brightness) Resize feature with mod &#43; ctrl &#43; arrow keys. Ensure power button work. Make alt&#43;F4 work as well, other than $mod &#43; q." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jchai01.github.io/posts/i3-configuration/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-12-26T22:45:57+00:00" />
@@ -120,6 +121,10 @@ Change open file explorer from ctrl&#43;n to ctrl&#43;e Make brightness key work
             </li>
           
             <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
               <a class="navigation-link" href="/about/">About</a>
             </li>
           
@@ -166,8 +171,8 @@ Change open file explorer from ctrl&#43;n to ctrl&#43;e Make brightness key work
         
         <p>My attempt on switching to a window manager (I3). I was on a pretty old laptop (GL752V), probably why I faced a handful of issues. Distro used: EndeavourOS.</p>
 <p>config file path:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>~/.config/i3/config
-</span></span></code></pre></div><p>Changes made:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">~/.config/i3/config
+</code></pre></div><p>Changes made:</p>
 <ul>
 <li>Change open file explorer from ctrl+n to ctrl+e</li>
 <li>Make brightness key work. (See fix i3wm brightness)</li>
@@ -181,27 +186,27 @@ Change open file explorer from ctrl&#43;n to ctrl&#43;e Make brightness key work
 <li>Keybinding to Google search highlighted word. (Mod+s)</li>
 </ul>
 <p>Resize:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bindsym <span style="color:#79c0ff">$mod</span>+Ctrl+Right resize shrink width <span style="color:#a5d6ff">1</span> px or <span style="color:#a5d6ff">1</span> ppt
-</span></span><span style="display:flex;"><span>bindsym <span style="color:#79c0ff">$mod</span>+Ctrl+Up resize grow height <span style="color:#a5d6ff">1</span> px or <span style="color:#a5d6ff">1</span> ppt
-</span></span><span style="display:flex;"><span>bindsym <span style="color:#79c0ff">$mod</span>+Ctrl+Down resize shrink height <span style="color:#a5d6ff">1</span> px or <span style="color:#a5d6ff">1</span> ppt
-</span></span><span style="display:flex;"><span>bindsym <span style="color:#79c0ff">$mod</span>+Ctrl+Left resize grow width <span style="color:#a5d6ff">1</span> px or <span style="color:#a5d6ff">1</span> ppt
-</span></span></code></pre></div><p>Power Button:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bindsym XF86PowerOff exec ~/.config/i3/scripts/powermenu
-</span></span><span style="display:flex;"><span>bindsym XF86PowerDown exec ~/.config/i3/scripts/powermenu
-</span></span></code></pre></div><p>Alt F4:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bindsym Mod1+F4 kill
-</span></span></code></pre></div><p>Dark theme (SET IN ~/.config/gtk-3.0/settings.ini):</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gtk-application-prefer-dark-theme<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">1</span>
-</span></span></code></pre></div><p>Remove binding of file explorer to workspace 3, comment out:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># for_window [class=Thunar] focus</span>
-</span></span></code></pre></div><p>xcfe4-screenshooter:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>xcfe4-screenshooter -r
-</span></span></code></pre></div><p>Copy to clipboard feature after screenshot, install package, then un-comment line:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S xfce4-clipman-plugin
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>exec --no-startup-id xfce4-clipman
-</span></span></code></pre></div><p>Change path of screenshot file:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bindsym Print exec scrot ~/Pictures/%Y-%m-%d-%T-screenshot.png <span style="color:#ff7b72;font-weight:bold">&amp;&amp;</span> notify-send <span style="color:#a5d6ff">&#34;Screenshot saved to ~/Pictures/</span><span style="color:#ff7b72">$(</span>date +<span style="color:#a5d6ff">&#34;%Y-%m-%d-%T&#34;</span><span style="color:#ff7b72">)</span><span style="color:#a5d6ff">-screenshot.png&#34;</span>
-</span></span></code></pre></div><h3 id="fix-i3wm-brightness">
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bindsym $mod+Ctrl+Right resize shrink width <span style="color:#ff0;font-weight:bold">1</span> px or <span style="color:#ff0;font-weight:bold">1</span> ppt
+bindsym $mod+Ctrl+Up resize grow height <span style="color:#ff0;font-weight:bold">1</span> px or <span style="color:#ff0;font-weight:bold">1</span> ppt
+bindsym $mod+Ctrl+Down resize shrink height <span style="color:#ff0;font-weight:bold">1</span> px or <span style="color:#ff0;font-weight:bold">1</span> ppt
+bindsym $mod+Ctrl+Left resize grow width <span style="color:#ff0;font-weight:bold">1</span> px or <span style="color:#ff0;font-weight:bold">1</span> ppt
+</code></pre></div><p>Power Button:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bindsym XF86PowerOff <span style="color:#fff;font-weight:bold">exec</span> ~/.config/i3/scripts/powermenu
+bindsym XF86PowerDown <span style="color:#fff;font-weight:bold">exec</span> ~/.config/i3/scripts/powermenu
+</code></pre></div><p>Alt F4:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bindsym Mod1+F4 <span style="color:#fff;font-weight:bold">kill</span>
+</code></pre></div><p>Dark theme (SET IN ~/.config/gtk-3.0/settings.ini):</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gtk-application-prefer-dark-theme=<span style="color:#ff0;font-weight:bold">1</span>
+</code></pre></div><p>Remove binding of file explorer to workspace 3, comment out:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#007f7f"># for_window [class=Thunar] focus</span>
+</code></pre></div><p>xcfe4-screenshooter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xcfe4-screenshooter -r
+</code></pre></div><p>Copy to clipboard feature after screenshot, install package, then un-comment line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S xfce4-clipman-plugin
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#fff;font-weight:bold">exec</span> --no-startup-id xfce4-clipman
+</code></pre></div><p>Change path of screenshot file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bindsym Print <span style="color:#fff;font-weight:bold">exec</span> scrot ~/Pictures/%Y-%m-%d-%T-screenshot.png &amp;&amp; notify-send <span style="color:#0ff;font-weight:bold">&#34;Screenshot saved to ~/Pictures/</span><span style="color:#fff;font-weight:bold">$(</span>date +<span style="color:#0ff;font-weight:bold">&#34;%Y-%m-%d-%T&#34;</span><span style="color:#fff;font-weight:bold">)</span><span style="color:#0ff;font-weight:bold">-screenshot.png&#34;</span>
+</code></pre></div><h3 id="fix-i3wm-brightness">
   Fix I3WM Brightness
   <a class="heading-link" href="#fix-i3wm-brightness">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
@@ -209,15 +214,15 @@ Change open file explorer from ctrl&#43;n to ctrl&#43;e Make brightness key work
   </a>
 </h3>
 <p>Download brightnessctl</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S brightnessctl
-</span></span></code></pre></div><p>Add the following line to your config:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#a5d6ff">200</span> &gt; /sys/class/backlight/intel_backlight/brightness
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#79c0ff">RUN</span><span style="color:#ff7b72;font-weight:bold">+=</span><span style="color:#a5d6ff">&#34;/bin/chgrp video /sys/class/backlight/intel_backlight/brightness&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#79c0ff">RUN</span><span style="color:#ff7b72;font-weight:bold">+=</span><span style="color:#a5d6ff">&#34;/bin/chmod 0664 /sys/class/backlight/intel_backlight/brightness&#34;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/etc/udev/rules.d/backlight.rules
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo usermod -a -G video chai
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo -e /etc/udev/rules.d/backlight.rules
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S brightnessctl
+</code></pre></div><p>Add the following line to your config:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#fff;font-weight:bold">echo</span> <span style="color:#ff0;font-weight:bold">200</span> &gt; /sys/class/backlight/intel_backlight/brightness
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">RUN+=<span style="color:#0ff;font-weight:bold">&#34;/bin/chgrp video /sys/class/backlight/intel_backlight/brightness&#34;</span>
+RUN+=<span style="color:#0ff;font-weight:bold">&#34;/bin/chmod 0664 /sys/class/backlight/intel_backlight/brightness&#34;</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/etc/udev/rules.d/backlight.rules
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo usermod -a -G video chai
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo -e /etc/udev/rules.d/backlight.rules
+</code></pre></div>
       </div>
 
 
@@ -280,7 +285,7 @@ Change open file explorer from ctrl&#43;n to ctrl&#43;e Make brightness key work
 
   
   
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  <script src="/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js" integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D&#43;Uk="></script>
   
 
   
