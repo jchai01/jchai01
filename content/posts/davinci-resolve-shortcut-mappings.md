@@ -4,16 +4,22 @@ title = "Davinci Resolve Shortcut Mappings"
 description = ""
 slug = ""
 authors = []
-tags = ["davinci-resolve"]
-categories = ["Video Editing"]
+tags = ["davinci resolve"]
+categories = ["video editing"]
 externalLink = ""
 series = []
 +++
 
-CTRL + ALT + K to access preference.
+## Access the preference menu
 
-Split Change from Ctrl + \ to “S”
+`ctrl + alt + k` to access preference menu.
 
-Start to playhead and End to playhead. CTRL + SHIFT + [ to “Q” and “W”
+## Changes
 
-Remember to remove keybindings for the affected shortcut.
+- **Split clips**: change from `ctrl + \` to `s`
+
+- **Start to playhead and end to playhead**: `ctrl + shift + [` and `ctrl + shift + ]` to `q` and `w` respectively.
+
+## Note
+
+- Remember to remove keybindings for any affected shortcut.

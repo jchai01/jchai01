@@ -4,8 +4,8 @@ title = "Xdotool script examples"
 description = ""
 slug = ""
 authors = []
-tags = ["Xdotool", "automation", "Linux"]
-categories = ["Linux"]
+tags = ["xdotool", "automation", "linux", "automation"]
+categories = ["linux", "automation"]
 externalLink = ""
 series = []
 +++

@@ -1,11 +1,11 @@
 +++ 
 date = 2023-12-26T22:57:27Z
-title = "Setup latest NeoVim on ubuntu with AppImage"
+title = "Setup latest NeoVim on Ubuntu with AppImage"
 description = ""
 slug = ""
 authors = []
-tags = []
-categories = []
+tags = ["linux", "neovim"]
+categories = ["linux"]
 externalLink = ""
 series = []
 +++

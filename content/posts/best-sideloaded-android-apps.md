@@ -1,16 +1,18 @@
 +++ 
 date = 2024-01-11T15:55:06Z
-title = "Best Sideloaded Android Apps"
+title = "Best sideloaded Android apps"
 description = ""
 slug = ""
 authors = []
-tags = []
-categories = []
+tags = ["android", "sideloading"]
+categories = ["android"]
 externalLink = ""
 series = []
 +++
 
-### ReVanced Manager/YouTube ReVanced
+It's time to celebrate the biggest advantage of Android devices, sideloading!
+
+## ReVanced Manager/YouTube ReVanced
 
 Removes ads on YouTube App, enables play in background feature. Able to patch various other app too via ReVanced Manager.
 
@@ -22,7 +24,7 @@ Patch the app yourself (get APK files from APKMirror):
 https://github.com/ReVanced/revanced-manager
 
 
-### xManager
+## xManager
 
 Ad-free Spotify patch:  
 https://github.com/Team-xManager/xManager
@@ -30,16 +32,16 @@ https://github.com/Team-xManager/xManager
 ViMusic: A more morally accpetable alternative? Have not personally tried it though:  
 https://github.com/vfsfitvnm/ViMusic
 
-### IceRaven
+## IceRaven
 
 A fork of Firefox, allows you to install browser add-ons such as the legendary uBlock Origin. Other options exist too (Chromite).
 
-### F-Droid
+## F-Droid
 
 FOSS (Free and Open Source Software) store for Android.
 
-### Universal Android Debloater (UAD)
+## Universal Android Debloater (UAD)
 
-Ok this is not really an app you can download to your phone via APK etc, but rather download it on your pc and and communicate to your Android via ADB.
+Ok this is not really an app you can download to your phone via APK, but rather download it on your pc and and communicate to your Android via ADB.
 
 https://github.com/0x192/universal-android-debloater
