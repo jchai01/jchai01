@@ -9,6 +9,8 @@ paginate = 20
 
 disqusShortname = "yourdiscussshortname"
 
+googleAnalytics = "G-DWPVNC5R8Z "
+
 [markup.highlight]
 style = "github-dark"
 
