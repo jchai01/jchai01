@@ -1,7 +1,7 @@
 +++ 
 date = 2024-04-12T23:47:06+01:00
 title = "Right to repair, why you should care?"
-description = "test"
+description = ""
 slug = ""
 authors = []
 tags = ["blog", "repair"]
@@ -12,17 +12,18 @@ series = []
 
 # E-waste
 
-Once upon a time, any electronics you bought would come with a schematic documenting it's inner workings. Not only are these official schematics almost impossible to obtain due to "information secrets", try to disassemble any electronic device and you will be met with a bunch of roadblocks; excessive use of adhesive, non-modular/soldered parts and requirement of proprietary tools. Apple even invented a mechanically inferior screw called the pentalope screw just to keep people out of their hardware.
+Once upon a time, any electronics you bought would come with a schematic documenting their inner workings. Not only are these official schematics almost impossible to obtain due to "trade secrets," try to disassemble any electronic device, and you will be met with a bunch of roadblocks: excessive use of adhesive, non-modular/soldered parts, and the requirement of proprietary tools. Apple even [invented](https://www.ifixit.com/News/9905/bit-history-the-pentalobe) a mechanically inferior screw called the pentalobe screw just to keep people out of their hardware.
 
-A simple battery replacement for a laptop now requires a full disassembly which is a pretty involved process, this makes consumers more likely to throw out their electronics rather than fixing it. Strategies used by companies such as planned obsolescence makes matter worse. 
+A simple battery replacement for a laptop now requires a full disassembly, which is a pretty involved process. This makes consumers more likely to throw out their electronics rather than fix them. Strategies used by companies, such as planned obsolescence, make matters worse. 
 
-# You will own nothing in the future (Software locks)
+# You will own nothing in the future (software locks)
 
-Software locks are commonly used to prevent repairs. This is proven true countless of times by Hugh Jeffrey's videos where he would assess the repairability of phones by performing a teardown of 2 identical phone and swapping the authentic parts. More often than not, the software detects that the hardware is tampered with and refuses to work. This serialization of parts (think of it as the part is married to the PCB board) is a common practice which reduces the availability of parts, it's the reason why repairs are expensive, especially independent repairs. Apparently, you can't even replace a sleep sensor on Apple's mac book now.
+Software locks are commonly used to prevent repairs. This is proven true countless times by [Hugh Jeffrey's videos](https://www.youtube.com/@HughJeffreys), where he assesses the repairability of phones by performing a teardown of 2 identical phones and swapping the authentic parts. More often than not, the software detects that the hardware is tampered with and refuses to work. This serialization of parts (think of it as the part being married to the PCB board) is a common practice that reduces the availability of parts. It's the reason why repairs are expensive, especially independent repairs. Apparently, you can't even [replace a sleep sensor on Apple's MacBook now](https://www.youtube.com/watch?v=RIFQC8iA65k).
 
-The infamous John Deere vs farmers case proved how devastating these software locks can be, farmers are unable to repair their agriculture machinery such as tractors. Not only that, they have also violated the GPL license and refuse to surrender their source code. 
+The infamous [John Deere vs Farmers](https://www.youtube.com/watch?v=IioP5x_ckWE) case proved how devastating these software locks can be. Farmers are unable to repair their agricultural machinery, such as tractors. Not only that, they have also [violate the GPL license](https://www.youtube.com/watch?v=5rgsXq2e7Ck) and refused to surrender their source code, disrespecting FOSS. 
 
 # Learn more
 
-- Louis Rossman (A repair and right to repair activist who owns a repair shop)
-- Hugh Jeffrey (Teardown of all sorts of equipment and compare their repairibility)
+- [ Louis Rossman ](https://www.youtube.com/@rossmanngroup) (A right to repair activist who owns a repair shop, focuses on Apple products.)
+- [ Hugh Jeffrey ](https://www.youtube.com/@HughJeffreys) (Teardown all sorts of equipment and assess their repairibility.)
+
