@@ -24,6 +24,10 @@ The infamous [John Deere vs Farmers](https://www.youtube.com/watch?v=IioP5x_ckWE
 
 # Learn more
 
-- [ Louis Rossman ](https://www.youtube.com/@rossmanngroup) (A right to repair activist who owns a repair shop, focuses on Apple products.)
-- [ Hugh Jeffrey ](https://www.youtube.com/@HughJeffreys) (Teardown all sorts of equipment and assess their repairibility.)
+- [Louis Rossman](https://www.youtube.com/@rossmanngroup) (right-to-repair activist who owns a repair shop, focuses on Apple products. Discuss many interesting topics/ideas too.)
+- [Hugh Jeffrey](https://www.youtube.com/@HughJeffreys) (videos focus on the teardown of all sorts of smartphones to assess their repairability.)
+- [TronicsFix](https://www.youtube.com/@TronicsFix) (entertaining repair videos, fix all sorts of electronics.)
+- [FrugalRepair](https://www.youtube.com/@FrugalRepair) (entertaining repair + DIY videos, not limited to just electronics.)
+- [NorthridgeFix](https://www.youtube.com/@NorthridgeFix) (livestream the entire repair process of electronics.)
+- [Electronics Repair School](https://www.youtube.com/c/Electronicsrepairschool) (livestream the entire repair process of electronics.)
 
