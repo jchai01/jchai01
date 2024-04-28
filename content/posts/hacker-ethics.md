@@ -23,7 +23,9 @@ Hacker was never a pejorative term. It has a second meaning that is loosely defi
 
 # What Ethics?
 
-Hacker ethic and hacker culture are already masterfully documented by Steven Levy in his book. Their philosophy can be summarized as the following: **sharing, openness, decentralization (mistrust authorities), free access to computers, and world improvement.** We believe openness makes the world a better place; we challenge the status quo; and we believe that bureaucracies, whether corporate, government, or university, are flawed systems. More elaborated in [wiki](https://en.wikipedia.org/wiki/Hacker_ethic).
+Hacker ethic and hacker culture are already masterfully documented by Steven Levy in his book. Their philosophy can be summarized as the following: **sharing, openness, decentralization (mistrust authorities), free access to computers, and world improvement.**
+
+We believe openness makes the world a better place; we challenge the status quo; and we believe that bureaucracies, whether corporate, government, or university, are flawed systems. More elaborated in [wiki](https://en.wikipedia.org/wiki/Hacker_ethic).
 
 # All Information Should be Free
 
