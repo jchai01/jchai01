@@ -10,7 +10,7 @@ externalLink = ""
 series = []
 +++
 
-In this post, I will attempt to gaslight you into thinking that I am perfectly normal. You will learn various reasons why Jackie is superior and an ideal role model, and perhaps start bowing down too. These reasons do not include the bogus "he does all his own stunts" [nonsense](https://www.youtube.com/watch?v=oycSHmJZGyE). Shame on him for claiming that, though, and on everyone who enables that manufactured perception, but that's a story for another day.
+In this post, I will attempt to gaslight you into thinking that I am perfectly normal. You will learn various reasons why Jackie is superior and an ideal role model, and perhaps start bowing down too. These reasons do not include the bogus "he does all his own stunts" [nonsense](https://www.youtube.com/watch?v=oycSHmJZGyE). Shame on him for claiming that, though, but that's a story for another day.
 
 # He is a polymath
 
