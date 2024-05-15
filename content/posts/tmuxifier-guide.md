@@ -12,9 +12,9 @@ series = []
 
 If you have ever tried to write a shell/batch script to automate a whole dev environment such as running backend servers/opening code editor etc, this guide is for you.
 
-Pre-requisite: Tmux
+Pre-requisite: Tmux ([My TMUX config](https://github.com/jchai01/dotfiles/blob/main/.tmux.conf))
 
-I have set the alias `alias tm=tmuxifier` in this guide.
+I have set the alias `alias t=tmuxifier` in this guide.
 
 ### Tmuxifier Path
 
@@ -30,16 +30,17 @@ I have set the alias `alias tm=tmuxifier` in this guide.
 ns = new-session
 
 ```bash
-tm ns name-of-session
+t ns name-of-session
 ```
 
 ### Example session template
 
 In this example, it starts:
+
 - several docker containers based on the yaml file
 - a frontend-server
 - a backend-server (geoserver) that isn't dockerized
-- opens the editor.
+- opens text editor
 
 ```bash
 # Set a custom session root path. Default is `$HOME`.
@@ -83,11 +84,11 @@ finalize_and_go_to_session
 Make sure you are not using your terminal inside Tmux, then run:
 
 ```bash
-tm s name-of-session
+t s name-of-session
 ```
 
 ### Editing a session
 
 ```bash
-tm es name-of-session
+t es name-of-session
 ```

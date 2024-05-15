@@ -1,6 +1,6 @@
 +++ 
 date = 2024-04-28T08:21:00+01:00
-title = "My Jackie Chan Obsession is Justified"
+title = "Why my Jackie Chan Obsession is Justified"
 description = ""
 slug = ""
 authors = []
