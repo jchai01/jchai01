@@ -54,16 +54,15 @@ jobs:
           TZ: America/Los_Angeles
         run: |
           hugo -t hugo-coder
-      - name: Pushes to another repository
-        uses: cpina/github-action-push-to-another-repository@main
+      - name: Push generated webpage to another repository
+        uses: nkoppel/push-files-to-another-repository@v1.1.3
         env:
-          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: public/
-          destination-github-username: jchai01
-          destination-repository-name: jchai01.github.io
-          user-email: josephchai100@hotmail.com
-          target-branch: main
+          source-files: public/
+          destination-username: jchai01
+          destination-repository: jchai01.github.io
+          commit-email: josephchai100@hotmail.com
 
       # - name: Upload artifact
       #   uses: actions/upload-pages-artifact@v3
