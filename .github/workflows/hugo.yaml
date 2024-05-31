@@ -52,11 +52,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
           TZ: America/Los_Angeles
-        run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo -t hugo-coder
       - name: Push generated webpage to another repository
         uses: nkoppel/push-files-to-another-repository@v1.1.3
         env:
