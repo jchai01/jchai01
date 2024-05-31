@@ -12,7 +12,7 @@ series = []
 
 # Create SSH key
 
-`ssh-keygen -o -t rsa -C "any comment”`
+`ssh-keygen -o -t rsa -C "any comment"`
 
 - The -o flag forces the tool to generate SSH keys with the OpenSSH format.
 - The -t flag specifies the type of SSH keys to create.
