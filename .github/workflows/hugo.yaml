@@ -53,10 +53,7 @@ jobs:
           HUGO_ENV: production
           TZ: America/Los_Angeles
         run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo -t hugo-coder
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
