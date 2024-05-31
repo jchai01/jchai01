@@ -53,7 +53,10 @@ jobs:
           HUGO_ENV: production
           TZ: America/Los_Angeles
         run: |
-          hugo -t hugo-coder
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Push generated webpage to another repository
         uses: nkoppel/push-files-to-another-repository@v1.1.3
         env:
@@ -62,6 +65,7 @@ jobs:
           source-files: public/
           destination-username: jchai01
           destination-repository: jchai01.github.io
+          destination-branch: main
           commit-email: josephchai100@hotmail.com
 
       # - name: Upload artifact
