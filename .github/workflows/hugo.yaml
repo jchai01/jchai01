@@ -42,22 +42,14 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
-        env:
-          # For maximum backward compatibility with Hugo modules
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
-          TZ: America/Los_Angeles
         run: hugo --gc --minify -t hugo-coder
       - name: Copy files to other repo
         run: |-
-          ls
-          cd public
-          ls
           git config --global user.email "josephchai100@hotmail.com"
           git config --global user.name "chai"
           git config --global credential.helper cache
           git clone https://${{secrets.API_TOKEN_GITHUB}}@github.com/jchai01/jchai01.github.io
-          cp -r * jchai01.github.io/ -f
+          cp -r ${{ github.workspace }}/public/* ${{ github.workspace }}/jchai01.github.io -f
           cd jchai01.github.io
           git add .
           git commit -m "."
