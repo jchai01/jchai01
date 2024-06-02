@@ -57,7 +57,7 @@ jobs:
           git config --global user.name "chai"
           git config --global credential.helper cache
           git clone https://${{secrets.API_TOKEN_GITHUB}}@github.com/jchai01/jchai01.github.io
-          cp * jchai01.github.io/ -f
+          cp -r * jchai01.github.io/ -f
           cd jchai01.github.io
           git add .
           git commit -m "."
