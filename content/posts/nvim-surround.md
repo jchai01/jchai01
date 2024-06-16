@@ -10,10 +10,7 @@ externalLink = ""
 series = []
 +++
 
-- Using `(` in nvim.surround surrounds word with white space like so: `( word )`.
-  `)` have to be used instead.
-
-The following overwrites the default:
+Using `(` in nvim.surround surrounds word with white space like so: `( word )`. `)` have to be used instead. The following changes in the `nvim.surround.lua` file overwrites this behaviour.
 
 ```bash
 return {
