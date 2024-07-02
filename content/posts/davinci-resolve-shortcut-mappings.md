@@ -17,9 +17,9 @@ series = []
 ## Changes
 
 - **Split clips**: change from `ctrl + \` to `s`
-
-- **Start to playhead and end to playhead**: `ctrl + shift + [` and `ctrl + shift + ]` to `q` and `w` respectively.
+- **Trim End** and **Trim Start**: `shift + [` and `shift + ]` to `q` and `w` respectively. (see notes for Davinci Resolve 18)
 
 ## Note
 
+- Davinci Resolve version 18: **Start to playhead** and **end to playhead**: `ctrl + shift + [` and `ctrl + shift + ]` to `q` and `w` respectively.
 - Remember to remove keybindings for any affected shortcut.
