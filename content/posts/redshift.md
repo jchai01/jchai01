@@ -12,7 +12,7 @@ series = []
 
 # Toggle + Location Agnostic Setup
 
-Create/edit the file `~/.config/redshift/redshift.confredshift.conf`, set temp-day and temp-night to the same value. lat and lon can be set randomly as it doesn't matter. Example:
+Create/edit the file `~/.config/redshift/redshift.conf`, set temp-day and temp-night to the same value. lat and lon can be set randomly as it doesn't matter. Example:
 
 ```
 [redshift]

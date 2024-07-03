@@ -13,10 +13,13 @@ series = []
 # Table of Contents
 
 - [Installation](#installation)
-  - [ExampleSUB](#examplesub)
-- [Example2](#example2)
-- [Third Example](#third-example)
-- [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+  - [Debugging](#Debugging)
+  - [Alternate Installation Method](#AlternateInstallationMethod)
+- [Installing GPU Drivers](#InstallingGPUDrivers)
+- [H264/H265/AAC Codec Workaround](#H264/H265/AACCodecWorkaround)
+  - [FFMPEG Conversion](#FFMPEGConversion)
+  - [Smart Folders with Incron](#SmartFolderswithIncron)
+  - [Magic Byte Codes](#MagicByteCodes)
 
 ## Installation
 
@@ -26,20 +29,20 @@ In general, go to resolve's official site to download and run their installer. I
 
 [This video](https://www.youtube.com/watch?v=Y87MFmcy3lc) shows the installation process for Ubuntu 24.04. It includes a comprehensive guide on hunting down and resolving dependencies issues which is useful and applicatble to any linux executable.
 
-### Alternative Installation Method
+### Alternate Installation Method
 
 - Docker/Podman: https://github.com/fat-tire/resolve
 - Distrobox: https://www.youtube.com/watch?v=wmRiZQ9IZfc
 
 ## Installing GPU Drivers
 
-## No H264/H265/AAC Codec Support Workaround
+## H264/H265/AAC Codec Workaround
 
 ### FFMPEG Conversion
 
 ### Smart Folders with Incron
 
-### Magic Byte codes;)
+### Magic Byte codes
 
 Download the studio version from the official site. On an arch system you can use `yay -S davinci-resolve-studio`.
 
