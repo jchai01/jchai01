@@ -38,3 +38,14 @@ With Redshift, you can set brightness level lower than the minumum.
 `redshift -oP -O 3500 -b .5`
 
 Note that calling xrandr on its own will cancel any redshift effect. The `-P` option of redshift also resets the screen brightness and color instead of incrementally superimposing adjustments.
+
+# Hotkey Binding
+
+https://github.com/jchai01/tempcolor
+
+Usage example:
+
+- bind `tempcolor -inc 10` to `super + shift + {`
+- bind `tempcolor -dec 10` to `super + shift + }`
+- bind `tempcolor -binc .1` to `super + ]`
+- bind `tempcolor -bdec .1` to `super + [`
