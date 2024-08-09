@@ -10,7 +10,7 @@ externalLink = ""
 series = []
 +++
 
-Welcome to first travel blog! The friends I travel with are the type to post like 1 pathetic photo after traveling in Turkey for a week:
+Welcome to my first travel blog! The friends I travel with are the type to post like 1 pathetic photo after traveling in Turkey for a week:
 
 ![turkey](/images/turkey.webp)
 
