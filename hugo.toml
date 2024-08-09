@@ -21,7 +21,7 @@ author = "Joseph Chai"
 # info = "Just Documenting my journey in tech."
 description = "Joseph Chai's personal website"
 keywords = "blog,developer,personal"
-avatarURL = "images/avatar.jpg"
+avatarURL = "images/avatar.webp"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
 since = 2019
@@ -187,7 +187,7 @@ name = "Projects"
 weight = 3
 url = "projects/"
 
-[[languages.en.menu.main]]
-name = "Contact me"
-weight = 5
-url = "contact/"
+# [[languages.en.menu.main]]
+# name = "Contact me"
+# weight = 5
+# url = "contact/"
