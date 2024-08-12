@@ -21,12 +21,15 @@ sudo pacman -S bluez bluez-utils arc-icon-theme arc-gtk-theme unzip fuse flamesh
 - `super+w`: firefox
 - `super+return`: terminal
 - `super+i`: `xfce4-settings-manager`
-- `alt-d`: show desktop
-- `super + left/right` to move windows (under window manager settings)
 - `print`: `flameshot gui`
 - `shift+print`: `flameshot full --clipboard --path /home/user/Pictures/screenshots`
 - `super+b`: `pkill -USR1 '^redshift$'`. [Setup reference](/posts/redshift/)
-- `super`: `xfce4-popup-whiskermenu`. Requires [workaround](#super-key-workaround 'jumps to super key workaround')
+- `super`: `xfce4-popup-whiskermenu`. Requires [workaround](#super-key-workaround "jumps to super key workaround")
+
+### Under Window Manager settings
+
+- `super+d`: show desktop
+- `super + left/right` to move windows (under window manager settings)
 
 # Super key workaround
 
