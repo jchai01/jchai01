@@ -1,6 +1,6 @@
 +++ 
 date = 2024-06-27T01:54:45+01:00
-title = "Davinci Resolve Linux resources"
+title = "Davinci Resolve Linux Resources"
 description = ""
 slug = ""
 authors = []
@@ -48,7 +48,7 @@ This is a Studio specific problem, as the studio version still does not support 
 
 This script I wrote that converts footage on the fly with a hotkey: https://github.com/jchai01/davinci-resolve-aac-workaround-macro
 
-### Magic Byte codes
+### Magic Byte Codes
 
 This is one way to workaround several Linux-specific annoyances. Consider supporting them and paying for their product especially if you are making money from it.
 
@@ -86,7 +86,7 @@ https://www.reddit.com/r/davinciresolve/comments/l73wyu/found_a_link_for_just_da
 - Hold down the `super` key and drag the window around with your mouse.
 - `alt+F10` is usually the hotkey to maximize the window of any software.
 
-## More Resources
+## Other Resources
 
 https://wiki.archlinux.org/title/DaVinci_Resolve
 https://alecaddd.com/davinci-resolve-ffmpeg-cheatsheet-for-linux/
