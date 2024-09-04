@@ -22,6 +22,8 @@ Go to resolve's official site to download and run their installer. If double cli
 
 [This video](https://www.youtube.com/watch?v=Y87MFmcy3lc) shows the installation process for Ubuntu 24.04. It includes a comprehensive guide on hunting down and resolving dependencies issues which is useful and applicable to any Linux executable.
 
+Example of missing dependencies error message: `symbol lookup error: /usr/lib/libpango-1.0.so.0: undefined symbol: g_once_init_leave_pointer`
+
 Running Resolve with preloaded libraries example:
 
 ```
@@ -107,7 +109,7 @@ https://www.reddit.com/r/davinciresolve/comments/l73wyu/found_a_link_for_just_da
 
 ## Can't Move or Maximize Resolve Window
 
-- Hold down the `super` key and drag the window around with your mouse. (`super` refers to the key with the Windows logo)
+- Hold down the `super` key and drag the window around with your mouse (`super` refers to the key with the Windows logo). Still looking for a solution.
 - `alt+F10` is usually the shortcut to maximize the window of any software.
 
 ## Nvidia GPU Installation
