@@ -24,3 +24,19 @@ Address=143.239.81.132/24
 Gateway=143.239.81.254
 DNS=143.239.1.2
 ```
+
+If the `.network` config file does not exist (for e.g. outside of the installation medium), create it at `/etc/systemd/network/20-ethernet.network`
+
+Minimally, the whole config file should look something like this:
+
+```bash
+[Match]
+Name=e*
+
+[Network]
+Address=143.239.81.132/24
+Gateway=143.239.81.254
+DNS=143.239.1.2
+```
+
+`e*` ensure it matches with any ethernet port names, e.g. enp1s0
