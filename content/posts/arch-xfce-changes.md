@@ -13,8 +13,10 @@ series = []
 # Packages:
 
 ```bash
-sudo pacman -S bluez bluez-utils arc-icon-theme arc-gtk-theme unzip fuse flameshot redshift copyq
+sudo pacman -S network-manager-applet wget bluez bluez-utils arc-icon-theme arc-gtk-theme unzip fuse flameshot redshift copyq
 ```
+
+- network-manager-applet need to be installed, in order to see the network icon in XFCE.
 
 # Keyboard shortcuts
 
