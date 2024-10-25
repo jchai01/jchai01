@@ -59,8 +59,7 @@ fi
 printf "\n$(date) \n" >>log.txt
 exec >>log.txt 2>&1
 
-# sets the meeting date 2 days from the current day
-MEETING_DATE=$(date -d "+2 days" +'%m/%d/%Y')
+MEETING_DATE=$(date -d "+2 days" +'%m/%d/%Y') # set date 2 days from now
 RECIPIENTS_FORMATTED=""
 RECIPIENTS="email1@abc.com email2@abc.com"
 
