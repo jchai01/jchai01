@@ -19,7 +19,7 @@ series = []
 
 - Use the following script to verify that the sending of email works (don't forget to `chmod +x`):
 
-```
+```bash
 #!/bin/bash
 
 # Prompt the user for input
@@ -52,18 +52,28 @@ fi
 
 - Modify the bash script to suit your need, for e.g:
 
-```
+```bash
 #!/bin/bash
+
+# for error handling when running cronjob, save output to log.txt
+printf "\n$(date) \n" >>log.txt
+exec >>log.txt 2>&1
 
 # sets the meeting date 2 days from the current day
 MEETING_DATE=$(date -d "+2 days" +'%m/%d/%Y')
+RECIPIENTS_FORMATTED=""
+RECIPIENTS="email1@abc.com email2@abc.com"
+
+# prepend all recipient's email with "--mail-rcpt", for e.g: "--mail-rcpt email1@abc.com --mail-rcpt email2@abc.com"
+for i in $RECIPIENTS
+do
+RECIPIENTS_FORMATTED+="--mail-rcpt $i "
+done
 
 response=$(curl -s --url 'smtps://smtp.gmail.com:465' --ssl-reqd \
-    --mail-from "email-address-to-send-from@gmail.com" \
-    --mail-rcpt "receving-email-1@gmail.com" \
-    --mail-rcpt "receving-email-2@gmail.com" \
+    --mail-from "email-address-to-send-from@gmail.com" $RECIPIENTS_FORMATTED \
     --user "email-address-to-send-from@gmail.com:aaaa bbbb cccc dddd" \
-    -T <(echo -e "From: email-address-to-send-from@gmail.com\nTo: receving-email-1@gmail.com receving-email-2@gmail.com\nSubject: Agenda for our meeting 1:00pm-2:00pm on Thursday ($MEETING_DATE)\n\nHi Dr Harry,\n\nPlease find the agenda as follows:\n13:00-13:15: Alice's update.\n13:15-13:30: Bob's update.\n13:30-13:45: Carl's update.\n13:45-14:00: Discussions: miscellaneous.\n\nhttps://teams.microsoft.com/l/meetup-join/19%3_NzZjZGXiOTYtMDRiOS00ZmI0-random-meeting-link\n\nRegards,\nUsername"))
+    -T <(echo -e "From: email-address-to-send-from@gmail.com\nTo: $RECIPIENTS\nSubject: Agenda for our meeting 1:00pm-2:00pm on Thursday ($MEETING_DATE)\n\nHi,\n\nPlease find the agenda as follows:\n13:00-13:15: Alice's update.\n13:15-13:30: Bob's update.\n13:30-13:45: Charlie's update.\n13:45-14:00: Discussions: miscellaneous.\n\nhttps://teams.microsoft.com/l/meetup-join/19%3_NzZjZGXiOTYtMDRiOS00ZmI0-random-meeting-link\n\nRegards,\nUsername"))
 
 if [ $? -eq 0 ]; then
     echo "Email sent successfully."
