@@ -1,6 +1,6 @@
 +++ 
 date = 2024-01-11T15:55:06Z
-title = "Best sideloaded Android apps"
+title = "Best Sideloaded Android Apps"
 description = ""
 slug = ""
 authors = []
@@ -23,25 +23,30 @@ Download APK file for **YouTube ReVanced** and **MicroG** and install them. (Mic
 Patch the app yourself (get APK files from APKMirror):  
 https://github.com/ReVanced/revanced-manager
 
-
 ## xManager
 
 Ad-free Spotify patch:  
 https://github.com/Team-xManager/xManager
 
-ViMusic: A more morally accpetable alternative? Have not personally tried it though:  
+ViMusic: another alternative to ad-free music
 https://github.com/vfsfitvnm/ViMusic
 
-## IceRaven
+## FlorisBoard
 
-A fork of Firefox, allows you to install browser add-ons such as the legendary uBlock Origin. Other options exist too (Chromite).
+Allow access to clipboard history (and hence, pinned clipboard items) while being on the number keyboard. Couldn't find this feature in any other keyboards.
+
+https://github.com/florisboard/florisboard
 
 ## F-Droid
 
 FOSS (Free and Open Source Software) store for Android.
 
+## IceRaven
+
+A fork of Firefox, allows you to install browser add-ons such as the legendary uBlock Origin. Other options exist too (Chromite).
+
 ## Universal Android Debloater (UAD)
 
-Ok this is not really an app you can download to your phone via APK, but rather download it on your pc and and communicate to your Android via ADB.
+This is not really an app you can download to your phone via APK, but rather, download it on your PC and communicate to your Android via ADB.
 
 https://github.com/0x192/universal-android-debloater
