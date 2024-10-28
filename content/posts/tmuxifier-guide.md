@@ -16,6 +16,13 @@ Pre-requisite: Tmux ([My TMUX config](https://github.com/jchai01/dotfiles/blob/m
 
 I have set the alias `alias t=tmuxifier` in this guide.
 
+### Install Tmuxifier:
+
+- Run `prefix+I` after setting up `.tmux.conf` in pre-requisite.
+- `sudo ln -sf $HOME/.tmux/plugins/tmuxifier/bin/tmuxifier'/ /usr/local/bin`
+
+Instruction: https://github.com/jimeh/tmuxifier
+
 ### Tmuxifier Path
 
 - To delete/rename sessions, go to this path and manipulate the files. (not sure why there isn't a command for these operations)
@@ -25,7 +32,7 @@ I have set the alias `alias t=tmuxifier` in this guide.
 ~/.tmuxifier/layouts/
 ```
 
-### Create a session
+### Create a Session
 
 ns = new-session
 
@@ -33,7 +40,7 @@ ns = new-session
 t ns name-of-session
 ```
 
-### Example session template
+### Example Session Template
 
 In this example, it starts:
 
@@ -79,7 +86,7 @@ fi
 finalize_and_go_to_session
 ```
 
-### Running a session
+### Running a Session
 
 Make sure you are not using your terminal inside Tmux, then run:
 
@@ -87,7 +94,7 @@ Make sure you are not using your terminal inside Tmux, then run:
 t s name-of-session
 ```
 
-### Editing a session
+### Editing a Session
 
 ```bash
 t es name-of-session

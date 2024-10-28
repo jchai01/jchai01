@@ -12,11 +12,10 @@ series = []
 
 # Packages:
 
-```bash
-sudo pacman -S network-manager-applet wget bluez bluez-utils arc-icon-theme arc-gtk-theme unzip fuse flameshot redshift copyq
-```
+`sudo pacman -S --needed base-devel git network-manager-applet thunar-archive-plugin wget bluez bluez-utils arc-icon-theme arc-gtk-theme unzip fuse flameshot redshift copyq tmux neovim libreoffice mpv`
 
-- network-manager-applet need to be installed, in order to see the network icon in XFCE.
+- network-manager-applet - in order to see the network icon in XFCE.
+- thunar-archive-plugin - right click extract feature.
 
 # Keyboard shortcuts
 
@@ -26,7 +25,7 @@ sudo pacman -S network-manager-applet wget bluez bluez-utils arc-icon-theme arc-
 - `print`: `flameshot gui`
 - `shift+print`: `flameshot full --clipboard --path /home/user/Pictures/screenshots`
 - `super+b`: `pkill -USR1 '^redshift$'`. [Setup reference](/posts/redshift/)
-- `super`: `xfce4-popup-whiskermenu`. Requires [workaround](#super-key-workaround "jumps to super key workaround")
+- `Alt+F3`: `xfce4-popup-whiskermenu`. Maps to `super` eventually, see [super key workaround](#super-key-workaround "jumps to super key workaround")
 
 ### Under Window Manager settings
 
@@ -46,9 +45,16 @@ This example maps `Alt+F3` to `super` key. [Reference](https://www.reddit.com/r/
 - Remove panel 2, bring panel 1 down.
 - Add Whisker Menu, remove Applications Menu.
 
+# Create Default Folders
+
+These folders don't exist by default, the commands create them as well as pin as bookmark
+
+- `mkdir -p ~/Pictures/screenshots ~/Documents ~/Music ~/Videos`
+- `mkdir -p .config/gtk-3.0/ && >.config/gtk-3.0/bookmarks`
+- `printf '%s\n' 'file:///home/user/Documents' 'file:///home/user/Pictures' 'file:///home/user/Videos' 'file:///home/user/Music' > .config/gtk-3.0/bookmarks`
+
 # Others
 
 - Keyboard setting, repeat delay: 300, repeat speed: 30
-- `mkdir -p ~/Pictures/screenshots ~/Documents ~/Music ~/Videos` (these folders don't exist, pin as bookmark too)
 - Add to `.bashrc` file: `export EDITOR=nvim`
-- Espanso official guide installs to `~/opt`, I prefer to keep everything in `/opt`
+- Setup AUR, install Espanso through AUR.
