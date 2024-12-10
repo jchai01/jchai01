@@ -1,16 +1,16 @@
 +++ 
 date = 2024-10-21T22:57:46+01:00
-title = "Arch Install reference"
+title = "Arch Install Reference/Guide"
 description = ""
 slug = ""
 authors = []
-tags = []
-categories = []
+tags = ["linux"]
+categories = ["guide"]
 externalLink = ""
 series = []
 +++
 
-This guide provides instructions for steps that isn't explained well/in detail by Arch Wiki.
+This guide provides in-detail instructions for steps in Arch installation, a reference for myself.
 
 ## Patitioning Disk with Fdisk
 
@@ -37,7 +37,8 @@ both of these clears the drive of any previous partitions and starts from clean 
 
 #### Boot partition
 
-- `n` to create a new partition. `+1G` to give it 1GB of space.
+- `n` to create a new partition.
+- Hit enter on the first sector, for the last sector: `+1G` to give it 1GB of space.
 - After creating, `t` to set the type, `ef` to set the type EFI partition.
 - `+512M` for e.g. to allocate 512MB of space.
 - Best to allocate 1GB of space for boot partition as recommended by Arch wiki (encountered an issue trying to install NVIDIA proprietary driver, turns out the boot partition ran out of space).
@@ -45,15 +46,17 @@ both of these clears the drive of any previous partitions and starts from clean 
 #### Swap partition (Optional)
 
 - `n`. `+4G`. (example for 4GB)
-- `t`, Change the value to 82 (Linux Swap).
+- `t`, Change the value to 82 (Double check, value for Linux swap might change).
 
 #### Root partition
 
 - `n`. Press enter multiple times to use the default value (the rest of the disk space).
 
-Once everything is done, `w` to write, this change is permanent.
+Once everything is done, `w` to permanently write.
 
 ### Formatting and Setting Filesystem Type
+
+use `lsblk` to ensure you are formatting the correct partition (sda1/sda2 etc...)
 
 #### FAT32 for boot partition:
 
@@ -69,12 +72,13 @@ Swap: for example sda2 is for swap.
 `mkswap /dev/sda2`
 `swapon /dev/sda2`
 
-Root partition mounted on /mnt: `mount /dev/sda3 /mnt`
+### Mounting & Installing
 
-`pacstrap -K /mnt base linux linux-firmware sudo nano`
-`-K` is to create an empty keyring.
-
-Generate filesystem table: `genfstab -U /mnt >> /mnt/etc/fstab` then `arch-chroot /mnt` to go into the installed system.
+- Mount root partition on `/mnt`: `mount /dev/sda3 /mnt`
+- Install Linux: `pacstrap -K /mnt base linux linux-firmware sudo vim`
+  `-K` is to create an empty keyring.
+- Generate filesystem table: `genfstab -U /mnt >> /mnt/etc/fstab`
+- `arch-chroot /mnt` to go into the installed system.
 
 ## Creating User
 
@@ -83,14 +87,17 @@ Generate filesystem table: `genfstab -U /mnt >> /mnt/etc/fstab` then `arch-chroo
 
 ## Installing XFCE4 Desktop Environment
 
-xfce4 installation: `sudo pacman -S xfce4 xfce4-goodies lightdm light-gtkgreeter`
-
-`systemctl enable lightdm`
-`systemctl enable NetworkManager`
+xfce4 installation: `sudo pacman -S xfce4 xfce4-goodies network-manager lightdm lightdm-gtk-greeter`
+Enable services: `systemctl enable lightdm` & `systemctl enable NetworkManager`
 
 ## Others
 
-`ctrl-alt-f2` to enter terminal if stuck at booting.
+- `ctrl-alt-f2` to enter terminal if stuck at booting.
+- If accidentally logout from installation medium, default password is `root`.
+
+## Post Installation
+
+- [My Arch XFCE changes](/posts/arch-xfce-changes)
 
 ## Ref
 

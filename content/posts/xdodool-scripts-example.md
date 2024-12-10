@@ -5,7 +5,7 @@ description = ""
 slug = ""
 authors = []
 tags = ["xdotool", "automation", "linux", "automation"]
-categories = ["linux", "automation"]
+categories = ["guide"]
 externalLink = ""
 series = []
 +++
@@ -44,16 +44,15 @@ xdotool key enter
 xdotool key super+e
 
 # Loops
-for n in {1..1}; 
+for n in {1..1};
 do
     xdotool key ctrl+c
     xdotool key Alt+Tab
 
 	# Inner loop
-    for n in {1..8}; 
+    for n in {1..8};
     do
         xdotool key Shift_L+Right
     done
 done
 ```
-
