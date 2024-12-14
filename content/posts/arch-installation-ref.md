@@ -75,20 +75,30 @@ Swap: for example sda2 is for swap.
 ### Mounting & Installing
 
 - Mount root partition on `/mnt`: `mount /dev/sda3 /mnt`
-- Install Linux: `pacstrap -K /mnt base linux linux-firmware sudo vim`
+- Install Linux: `pacstrap -K /mnt base linux linux-firmware sudo vi`
   `-K` is to create an empty keyring.
 - Generate filesystem table: `genfstab -U /mnt >> /mnt/etc/fstab`
 - `arch-chroot /mnt` to go into the installed system.
 
+## Grub Installation
+
 ## Creating User
 
+- `passwd` to set a root password, the default root password is an invalid one.
 - `useradd -m -G wheel -s /bin/bash username`
+- edit the visudo file to allow users in wheel group to use sudo: `sudo visudo` (uncomment the appropriate line)
 - adding `-s /bin/bash` resolved an issue where the password entered is always incorrect when trying to login.
+- `passwd username` to set a password.
 
 ## Installing XFCE4 Desktop Environment
 
 xfce4 installation: `sudo pacman -S xfce4 xfce4-goodies network-manager lightdm lightdm-gtk-greeter`
 Enable services: `systemctl enable lightdm` & `systemctl enable NetworkManager`
+
+## GPU Driver installation
+
+- `sudo pacman -S nvidia-open nvidia-utils nvidia-settings`
+- after running this command, reboot and check if nvidia drivers are properly installed with the `nvidia-smi` command
 
 ## Others
 

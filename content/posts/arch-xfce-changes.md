@@ -12,7 +12,7 @@ series = []
 
 # Packages:
 
-`sudo pacman -S --needed base-devel git network-manager-applet thunar-archive-plugin wget bluez bluez-utils arc-icon-theme arc-gtk-theme unzip fuse flameshot redshift copyq tmux neovim libreoffice mpv`
+`sudo pacman -S --needed base-devel git network-manager-applet thunar-archive-plugin wget bluez bluez-utils arc-icon-theme arc-gtk-theme unzip fuse flameshot redshift copyq tmux neovim libreoffice mpv xcape net-tools`
 
 - network-manager-applet - in order to see the network icon in XFCE.
 - thunar-archive-plugin - right click extract feature.
@@ -29,7 +29,6 @@ series = []
 
 ### Under Window Manager settings
 
-- `super+d`: show desktop
 - `super + left/right` to move windows (under window manager settings)
 
 # Super key workaround
@@ -51,7 +50,7 @@ These folders don't exist by default, the commands create them as well as pin as
 
 - `mkdir -p ~/Pictures/screenshots ~/Documents ~/Music ~/Videos`
 - `mkdir -p .config/gtk-3.0/ && >.config/gtk-3.0/bookmarks`
-- `printf '%s\n' 'file:///home/user/Documents' 'file:///home/user/Pictures' 'file:///home/user/Videos' 'file:///home/user/Music' > .config/gtk-3.0/bookmarks`
+- `printf '%s\n' "file:///home/$USER/Documents" "file:///home/$USER/Pictures" "file:///home/$USER/Videos" "file:///home/$USER/Music" > .config/gtk-3.0/bookmarks`
 
 # Others
 
