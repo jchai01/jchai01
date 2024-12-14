@@ -1,19 +1,17 @@
-### CREATE NEW POST
-```bash
-hugo new posts/name-of-post.md
-```
+# Cloning Repo
 
-### RUN ON LOCALHOST
-```bash
-hugo server
-```
+`git clone --recurse-submodules git@github.com:jchai01/jchai01.git`
 
-### DEPLOY
-1. Generate static files with :
-```bash
-hugo -t hugo-coder 
-```
-2. cd into the public folder. Git add, commit and push.
+# Create New Post
 
-Setup reference:
-https://www.youtube.com/watch?v=LIFvgrRxdt4
+`hugo new posts/name-of-post.md`
+
+# Run on Localhost
+
+`hugo serve`
+
+# Deploy
+
+Generate static files with: `hugo -t hugo-coder`
+
+Update: just git commit will do.
