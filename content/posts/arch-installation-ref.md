@@ -12,6 +12,9 @@ series = []
 
 This guide provides in-detail instructions for steps in Arch installation, a reference for myself.
 
+Pre-requisites:
+- disable CSM in bios to prevent errors on GRUB installation.
+
 ## Patitioning Disk with Fdisk
 
 ### Selecting the disk
@@ -82,23 +85,32 @@ Swap: for example sda2 is for swap.
 
 ## Grub Installation
 
+- `pacman -S grub efibootmgr`
+- `mkdir /boot/efi`
+- `mount /dev/efi-partition /boot/efi`
+- `grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck`
+- `grub-mkconfig -o /boot/grub/grub.cfg`
+
+ref: https://gist.github.com/chriscandy/16899e0d701a05654cb4f79ef2d2d062
+
 ## Creating User
 
 - `passwd` to set a root password, the default root password is an invalid one.
 - `useradd -m -G wheel -s /bin/bash username`
-- edit the visudo file to allow users in wheel group to use sudo: `sudo visudo` (uncomment the appropriate line)
+- edit the visudo file to allow users in wheel group to use sudo: `sudo visudo` (uncomment the appropriate lines)
 - adding `-s /bin/bash` resolved an issue where the password entered is always incorrect when trying to login.
 - `passwd username` to set a password.
 
 ## Installing XFCE4 Desktop Environment
 
-xfce4 installation: `sudo pacman -S xfce4 xfce4-goodies network-manager lightdm lightdm-gtk-greeter`
+xfce4 installation: `sudo pacman -S xfce4 xfce4-goodies networkmanager lightdm lightdm-gtk-greeter`
 Enable services: `systemctl enable lightdm` & `systemctl enable NetworkManager`
 
 ## GPU Driver installation
 
-- `sudo pacman -S nvidia-open nvidia-utils nvidia-settings`
-- after running this command, reboot and check if nvidia drivers are properly installed with the `nvidia-smi` command
+- for certain nvidia card, running: `sudo pacman -S nvidia-open nvidia-utils nvidia-settings` and rebooting the pc should work.
+- otherwise, refer to the full guide: https://github.com/korvahannu/arch-nvidia-drivers-installation-guide
+- check if nvidia driver is installed with `nvidia-smi`.
 
 ## Others
 

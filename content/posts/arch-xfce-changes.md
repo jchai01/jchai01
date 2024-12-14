@@ -12,7 +12,7 @@ series = []
 
 # Packages:
 
-`sudo pacman -S --needed base-devel git network-manager-applet thunar-archive-plugin wget bluez bluez-utils arc-icon-theme arc-gtk-theme unzip fuse flameshot redshift copyq tmux neovim libreoffice mpv xcape net-tools`
+`sudo pacman -S --needed base-devel git network-manager-applet thunar-archive-plugin wget bluez bluez-utils arc-icon-theme arc-gtk-theme unzip fuse flameshot redshift copyq tmux neovim libreoffice mpv xcape net-tools obsidian syncthing alacritty xclip`
 
 - network-manager-applet - in order to see the network icon in XFCE.
 - thunar-archive-plugin - right click extract feature.
@@ -24,12 +24,13 @@ series = []
 - `super+i`: `xfce4-settings-manager`
 - `print`: `flameshot gui`
 - `shift+print`: `flameshot full --clipboard --path /home/user/Pictures/screenshots`
-- `super+b`: `pkill -USR1 '^redshift$'`. [Setup reference](/posts/redshift/)
+- `super+b`: `pkill -USR1 '^redshift$'`. [Redshift setup reference](/posts/redshift/)
+- `super+s`: `sh -c 'firefox "https://www.google.com/search?q=$(xclip -o)"'`. [Google Search hotkey setup reference](/posts/google-search-highlighted-text/)
 - `Alt+F3`: `xfce4-popup-whiskermenu`. Maps to `super` eventually, see [super key workaround](#super-key-workaround "jumps to super key workaround")
 
 ### Under Window Manager settings
 
-- `super + left/right` to move windows (under window manager settings)
+- `super + left/right/up/down` to tile windows  left/right/up/down.
 
 # Super key workaround
 
@@ -54,6 +55,9 @@ These folders don't exist by default, the commands create them as well as pin as
 
 # Others
 
-- Keyboard setting, repeat delay: 300, repeat speed: 30
 - Add to `.bashrc` file: `export EDITOR=nvim`
-- Setup AUR, install Espanso through AUR.
+- alacritty as default terminal
+- Setup AUR: https://itsfoss.com/aur-arch-linux/
+- install Espanso through AUR.
+- nvim config: git clone https://github.com/jchai01/astrovim-config-v4 ~/.config/nvim
+- dotfile setup: https://github.com/jchai01/dotfiles
