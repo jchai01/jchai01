@@ -30,7 +30,7 @@ series = []
 
 ### Under Window Manager settings
 
-- `super + left/right/up/down` to tile windows  left/right/up/down.
+- `super + left/right/up/down` to tile windows.
 
 # Super key workaround
 
@@ -58,6 +58,6 @@ These folders don't exist by default, the commands create them as well as pin as
 - Add to `.bashrc` file: `export EDITOR=nvim`
 - alacritty as default terminal
 - Setup AUR: https://itsfoss.com/aur-arch-linux/
-- install Espanso through AUR.
+- install Espanso through AUR, run on startup: `espanso service register`
 - nvim config: git clone https://github.com/jchai01/astrovim-config-v4 ~/.config/nvim
 - dotfile setup: https://github.com/jchai01/dotfiles
