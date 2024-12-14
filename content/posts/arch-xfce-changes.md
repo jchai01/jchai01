@@ -53,6 +53,12 @@ These folders don't exist by default, the commands create them as well as pin as
 - `mkdir -p .config/gtk-3.0/ && >.config/gtk-3.0/bookmarks`
 - `printf '%s\n' "file:///home/$USER/Documents" "file:///home/$USER/Pictures" "file:///home/$USER/Videos" "file:///home/$USER/Music" > .config/gtk-3.0/bookmarks`
 
+# Nerdfont Installation
+
+```
+sudo wget -P /usr/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip && sudo unzip -d /usr/share/fonts/Hack /usr/share/fonts/Hack.zip && sudo rm /usr/share/fonts/Hack.zip
+```
+
 # Others
 
 - Add to `.bashrc` file: `export EDITOR=nvim`
