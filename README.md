@@ -12,6 +12,5 @@
 
 # Deploy
 
-Generate static files with: `hugo -t hugo-coder`
-
-Update: just git commit will do.
+- Git commit will do
+- Generate static files with: `hugo -t hugo-coder` (no longer required)
