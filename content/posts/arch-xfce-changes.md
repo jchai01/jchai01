@@ -65,5 +65,5 @@ sudo wget -P /usr/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/d
 - alacritty as default terminal
 - Setup AUR: https://itsfoss.com/aur-arch-linux/
 - install Espanso through AUR, run on startup: `espanso service register`
-- nvim config: git clone https://github.com/jchai01/astrovim-config-v4 ~/.config/nvim
+- nvim config: `git clone https://github.com/jchai01/astrovim-config-v4 ~/.config/nvim`
 - dotfile setup: https://github.com/jchai01/dotfiles
