@@ -51,8 +51,8 @@ This example maps `Alt+F3` to `super` key. [Reference](https://www.reddit.com/r/
 These folders don't exist by default, the commands create them as well as pin as bookmark
 
 - `mkdir -p ~/Pictures/screenshots ~/Documents ~/Music ~/Videos`
-- `mkdir -p .config/gtk-3.0/ && >.config/gtk-3.0/bookmarks`
-- `printf '%s\n' "file:///home/$USER/Documents" "file:///home/$USER/Pictures" "file:///home/$USER/Videos" "file:///home/$USER/Music" > .config/gtk-3.0/bookmarks`
+- `mkdir -p ~/.config/gtk-3.0/ && >~/.config/gtk-3.0/bookmarks`
+- `printf '%s\n' "file:///home/$USER/Downloads" "file:///home/$USER/Documents" "file:///home/$USER/Pictures" "file:///home/$USER/Videos" "file:///home/$USER/Music" > ~/.config/gtk-3.0/bookmarks`
 
 # Nerdfont Installation
 
