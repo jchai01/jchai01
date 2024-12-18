@@ -12,11 +12,13 @@ series = []
 
 # Packages:
 
-`sudo pacman -S --needed base-devel git network-manager-applet thunar-archive-plugin unzip xarchiver wget bluez bluez-utils arc-icon-theme arc-gtk-theme fuse flameshot redshift copyq tmux neovim libreoffice mpv xcape net-tools obsidian syncthing alacritty xclip`
+`sudo pacman -S --needed base-devel git network-manager-applet thunar-archive-plugin unzip xarchiver gvfs wget bluez bluez-utils arc-icon-theme arc-gtk-theme fuse flameshot redshift copyq tmux neovim libreoffice mpv xcape net-tools obsidian syncthing alacritty xclip`
 
 - network-manager-applet - in order to see the network icon in XFCE.
 - thunar-archive-plugin, unzip, xarchiver - right click extract feature.
-- bluez bluez-utils - bluetooth features
+- bluez bluez-utils - bluetooth features.
+- gvfs - connect and view remote file system in thunar
+- tumbler, ffmpegthumbnailer - thumbnail for video files.
 
 # Keyboard shortcuts
 
