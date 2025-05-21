@@ -10,7 +10,7 @@ externalLink = ""
 series = []
 +++
 
-### Changing Aspect Ratio
+## Changing Aspect Ratio
 
 Resizing a video from 4:3 to 16:9 (HD, 1280 x 720) for max screen size, with no cropping and addition of black padding
 ```bash
@@ -44,5 +44,18 @@ The scale transformation is then followed (chained) by a pad video filter:
 * (ow-iw)/2:(oh-ih)/2 = Overlay the original film in the middle
 * blue = the padding color 
 
-Credits to The FFMPEG Guy: https://www.youtube.com/watch?v=XKUFShFeqXc
+The FFMPEG Guy: https://www.youtube.com/watch?v=XKUFShFeqXc
 
+## Convert to WhatsApp compatible format
+
+`fmpeg -i broken.mp4 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p working.mp4`
+
+- `-profile:v baseline -level 3.0` makes the file more compatible with most older players, including WhatsApp. Although, it disables some advanced features.
+- `-pix_fmt yuv420p` is necessary to compile to baseline (YUV planar color space with 4:2:0 chroma subsampling).
+- https://stackoverflow.com/questions/39887869/ffmpeg-whatsapp-video-format-not-supported
+
+## Trimming videos:
+
+`ffmpeg -ss 00:00:03 -i file.mp4 -c copy output.mp4`
+- trims from 3 sec to the end
+- `-c copy` trims without re-encoding video and audio

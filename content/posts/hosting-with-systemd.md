@@ -10,7 +10,7 @@ externalLink = ""
 series = []
 +++
 
-Use systemd to maintain running processes, simply place a `.service` file into `/etc/systemd/system` and enable it:
+Use Systemd to maintain running processes, simply place a `.service` file into `/etc/systemd/system` and enable it:
 
 # Creating a Unit file:
 
@@ -28,6 +28,27 @@ User=username
 Environment=REDIS_HOST=localhost
 WorkingDirectory=/home/user/Development/demo-api-redis
 ExecStart=/usr/bin/node index.js # full absolute path required if running a script
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Example with Python app (Flask app with Gunicorn and virtual environment):
+
+```
+[Unit]
+Description=desc
+After=network.target
+
+[Service]
+User=username
+Environment="PATH=/home/path-to-repo/.venv/bin"
+WorkingDirectory=/home/path-to-repo/
+ExecStart=/home/path-to-repo/.venv/bin/gunicorn --workers 3 --bind 0.0.0.0:8080 app:app
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=5
+PrivateTmp=true
 
 [Install]
 WantedBy=multi-user.target
