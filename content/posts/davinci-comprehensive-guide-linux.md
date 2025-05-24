@@ -76,6 +76,10 @@ This is a Studio specific problem, as the studio version still does not support 
 
 A script I wrote that converts a footage on the fly with a hotkey: https://github.com/jchai01/davinci-resolve-aac-workaround-macro
 
+### Exporting videos with AAC Plugin
+
+https://github.com/Toxblh/davinci-linux-aac-codec
+
 ### Magic Byte Codes
 
 One way to workaround several Linux-specific annoyances. Consider supporting them and paying for their product especially if you are making money from it.
@@ -106,6 +110,14 @@ Reference:
 https://www.reddit.com/r/LinuxCrackSupport/comments/1f17xw6/davinci_resolve_studio_19_crack_for_linux/
 https://www.reddit.com/r/LinuxCrackSupport/comments/1cnslsp/davinci_resolve_studio_19_beta_2_patch_guide/
 https://www.reddit.com/r/davinciresolve/comments/l73wyu/found_a_link_for_just_davinci_downloads/
+
+# Troubleshoot
+
+## Your GPU Memory is Full + Blank Video Screen on Linux
+
+Open the NVIDIA settings app and switch from "on demand" to "performance".
+
+ref: https://www.reddit.com/r/davinciresolve/comments/1fp44ab/your_gpu_memory_is_full_on_linux_resolved_for_me/
 
 ## Can't Move or Maximize Resolve Window
 

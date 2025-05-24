@@ -10,7 +10,7 @@ externalLink = ""
 series = []
 +++
 
-### Virtual Environment
+## Virtual Environment
 
 In this example, folder for the Virtual Environment is .venv
 
@@ -40,40 +40,24 @@ pip uninstall name-of-package
 pip install -r requirements.txt
 ```
 
-### pyenv
+## pyenv
+
 Manage different versions of python.
 
-List all version installed:
-```bash
-pyenv versions
-```
+List all version installed: `pyenv versions`
 
-Switch to a particular version example:
-```bash
-pyenv global 3.8
-```
+Switch to a particular version example: `pyenv global 3.8`
 
-Reset back to default:
-```bash
-pyenv global system
-```
+Reset back to default: `pyenv global system`
 
-List all version available for install:
-```bash
-pyenv install -l
-```
+List all version available for install: `pyenv install -l`
 
-Install a python version example:
-```bash
-pyenv install 3.8
-```
+Install a python version example: `pyenv install 3.8`
 
-Install a python version example:
-```bash
-pyenv install 3.8
-```
+Install a python version example: `pyenv install 3.8`
 
 If installation of python version fail, ensure dependencies are installed:
+
 ```bash
 sudo apt update
 sudo apt install \
@@ -96,3 +80,9 @@ sudo apt install \
     zlib1g-dev
 ```
 
+### pyenv usage example
+
+Create new virtualenv (use same name as project name to avoid confusion): `pyenv virtualenv <version-number> <name-of-venv>`
+For e.g. `pyenv virtualenv 3.10 ProjectName`
+
+Activate: `pyenv local ProjectName`

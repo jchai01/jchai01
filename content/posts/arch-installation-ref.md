@@ -101,6 +101,10 @@ ref: https://gist.github.com/chriscandy/16899e0d701a05654cb4f79ef2d2d062
 - adding `-s /bin/bash` resolved an issue where the password entered is always incorrect when trying to login.
 - `passwd username` to set a password.
 
+## Install GRUB Bootloader
+
+- Disable CSM (compatibility support module) support in BIOS
+
 ## Installing XFCE4 Desktop Environment
 
 xfce4 installation: `sudo pacman -S xfce4 xfce4-goodies networkmanager lightdm lightdm-gtk-greeter`

@@ -12,7 +12,7 @@ series = []
 
 # Packages:
 
-`sudo pacman -S --needed base-devel git network-manager-applet thunar-archive-plugin unzip xarchiver gvfs wget bluez bluez-utils arc-icon-theme arc-gtk-theme fuse flameshot redshift copyq tmux neovim libreoffice mpv xcape net-tools obsidian syncthing alacritty xclip`
+`sudo pacman -S --needed base-devel git network-manager-applet thunar-archive-plugin unzip xarchiver gvfs wget bluez bluez-utils arc-icon-theme arc-gtk-theme fuse flameshot redshift copyq tmux neovim libreoffice mpv xcape net-tools obsidian syncthing alacritty xclip htop`
 
 - network-manager-applet - in order to see the network icon in XFCE.
 - thunar-archive-plugin, unzip, xarchiver - right click extract feature.
@@ -34,6 +34,7 @@ series = []
 ### Under Window Manager settings
 
 - `super + left/right/up/down` to tile windows.
+- `super + shift +left/right` Move window to left/right monitor (match shortcut in Ubuntu).
 
 # Super key workaround
 
@@ -47,6 +48,7 @@ This example maps `Alt+F3` to `super` key. [Reference](https://www.reddit.com/r/
 
 - Remove panel 2, bring panel 1 down.
 - Add Whisker Menu, remove Applications Menu.
+- Remove `alt + scroll wheel` zoom effect: `Applications Menu -> Settings -> Settings Editor` and uncheck `zoom_desktop`: https://www.virtualcuriosities.com/articles/380/xfce4-disable-alt-scroll-zoom
 
 # Create Default Folders
 
@@ -58,7 +60,7 @@ These folders don't exist by default, the commands create them as well as pin as
 
 # Nerdfont Installation
 
-```
+```bash
 sudo wget -P /usr/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip && sudo unzip -d /usr/share/fonts/Hack /usr/share/fonts/Hack.zip && sudo rm /usr/share/fonts/Hack.zip
 ```
 

@@ -12,13 +12,14 @@ series = []
 
 # Toggle + Location Agnostic Setup
 
-Create/edit the file `~/.config/redshift/redshift.conf`, set temp-day and temp-night to the same value. lat and lon can be set randomly as it doesn't matter. Example:
+Create/edit the file `~/.config/redshift.conf`, set temp-day and temp-night to the same value. lat and lon can be set randomly as it doesn't matter. Example:
 
 ```
 [redshift]
 temp-day=3500
 temp-night=3500
 fade=0
+transition=0
 location-provider=manual
 
 [manual]
@@ -27,6 +28,8 @@ lon=2.349014
 ```
 
 Set startup to run `redshift`. Enable toggle with `pkill -USR1 '^redshift$'`, bind it to a hotkey.
+
+Note: the path `.config/redshift/redshift.conf` does not work in Ubuntu.
 
 # Manual Usage
 
