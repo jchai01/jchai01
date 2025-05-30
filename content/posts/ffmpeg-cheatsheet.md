@@ -54,6 +54,11 @@ The FFMPEG Guy: https://www.youtube.com/watch?v=XKUFShFeqXc
 - `-pix_fmt yuv420p` is necessary to compile to baseline (YUV planar color space with 4:2:0 chroma subsampling).
 - https://stackoverflow.com/questions/39887869/ffmpeg-whatsapp-video-format-not-supported
 
+## Convert to Instagram compatible format
+
+- Seems like IG post for videos require a yuv420p format too to avoid the "Will Auto-Post When Possible" error.
+- `ffmpeg -i file.mp4 -vf format=yuv420p out.mp4`
+
 ## Trimming videos:
 
 `ffmpeg -ss 00:00:03 -i file.mp4 -c copy output.mp4`
