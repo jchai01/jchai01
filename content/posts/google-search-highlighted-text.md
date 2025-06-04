@@ -30,3 +30,12 @@ Just one line will do:
 ```bash
 sh -c 'firefox "https://www.google.com/search?q=$(xclip -o)"'
 ```
+
+## Update (06/04/2025)
+
+Focus on Firefox too.
+
+`sudo apt install wmctrl`
+`sh -c 'firefox "https://www.google.com/search?q=$(xclip -o)"' | wmctrl -a Firefox`
+
+Running the script: `/home/user/Desktop/scripts/google-search`
