@@ -16,6 +16,7 @@ Useful shortcuts I use with Firefox, but it should work in all modern browser.
 - Switching tabs, alternative to `alt+tab` & `alt+shift+tab`: `ctrl+PageUp/PageDown`
 - `alt+1` switches to the 1st tab, `alt+2` to 2nd tab, etc... `alt+9` for last tab
 - Move tabs: `Ctrl+Shift+Page Up/Down`
+- Duplicate Tab: `alt+d` then `alt+enter`
 
 # Addons
 

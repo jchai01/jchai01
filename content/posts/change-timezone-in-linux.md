@@ -11,6 +11,7 @@ series = []
 +++
 
 View current timezone:
+
 ```bash
 timedatectl
 ```
@@ -25,4 +26,10 @@ Change timezone example:
 
 ```bash
 sudo timedatectl set-timezone Europe/Dublin
+```
+
+If it's still not accurate, try:
+
+```bash
+`timedatectl set-ntp true`
 ```
