@@ -1,6 +1,6 @@
 +++ 
 date = 2023-12-24T23:58:39Z
-title = "Change Timezone in Linux"
+title = "Changing Timezone in Linux"
 description = "Guide on changing the timezone in Linux"
 slug = ""
 authors = []
@@ -9,6 +9,18 @@ categories = ["Linux"]
 externalLink = ""
 series = []
 +++
+
+# Using tzupdate
+
+https://github.com/cdown/tzupdate
+
+Automatically set timezone:
+
+```bash
+sudo tzupdate
+```
+
+# Manual
 
 View current timezone:
 

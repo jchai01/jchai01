@@ -12,7 +12,9 @@ series = []
 
 # Packages:
 
-`sudo pacman -S --needed base-devel git network-manager-applet thunar-archive-plugin unzip xarchiver gvfs wget bluez bluez-utils arc-icon-theme arc-gtk-theme fuse flameshot redshift copyq tmux neovim libreoffice mpv xcape net-tools obsidian syncthing alacritty xclip htop`
+```bash
+sudo pacman -S --needed base-devel git network-manager-applet thunar-archive-plugin unzip xarchiver gvfs wget bluez bluez-utils fuse flameshot redshift copyq tmux neovim libreoffice mpv xcape net-tools obsidian syncthing alacritty xclip htop ntfs-3g
+```
 
 - network-manager-applet - in order to see the network icon in XFCE.
 - thunar-archive-plugin, unzip, xarchiver - right click extract feature.
@@ -69,6 +71,5 @@ sudo wget -P /usr/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/d
 - Add to `.bashrc` file: `export EDITOR=nvim`
 - alacritty as default terminal
 - Setup AUR: https://itsfoss.com/aur-arch-linux/
-- install Espanso through AUR, run on startup: `espanso service register`
 - nvim config: `git clone https://github.com/jchai01/astrovim-config-v4 ~/.config/nvim`
 - dotfile setup: https://github.com/jchai01/dotfiles

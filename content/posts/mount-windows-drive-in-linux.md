@@ -1,7 +1,27 @@
 ---
-title: "Automount Windows NTFS drive in Linux"
+title: "Dealing with NTFS drive in Linux"
 date: 2023-12-24T23:10:09Z
+tags = ["linux"]
+categories = ["linux"]
 ---
+
+# Mount NTFS in Arch
+
+wrong fs type, bad option, bad superblock on /dev/sdc1, missing codepage or helper program, or other error.
+
+use `sudo fdisk -l` to find out the drive.
+
+```bash
+sudo mount -t ntfs-3g /dev/sdc1 /mnt/
+```
+
+# Fix NTFS HDD NTFS
+
+```bash
+sudo ntfsfix -b -d /dev/sda6
+```
+
+# Automount Windows NTFS drive in Linux
 
 Find out where the windows drive is located: `lsblk -lf`
 

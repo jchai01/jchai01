@@ -55,4 +55,33 @@ do
         xdotool key Shift_L+Right
     done
 done
+
+# Moving the mouse
+xdotool mousemove 100 100
+
+# click mouse
+xdotool click 1
+
+# click and drag
+xdotool mousemove 800 600 # initial position
+xdotool mousedown 1
+xdotool mousemove 860 700 # after position
+xdotool mouseup 1
+
+# scrolling
+xdotool click 4 # scroll up
+xdotool click 5 # scroll down
+xdotool key Page_Down # or just use page up/down
 ```
+
+## Getting mouse location
+
+`xdotool getmouselocation`
+
+updates every 2 second:
+`watch -n0.1 xdotool getmouselocation`
+
+## Ref
+
+https://www.youtube.com/watch?v=feLbkm5aV_0
+https://github.com/oidz1234/Examples/blob/master/xdotool_cookie_clicker.sh

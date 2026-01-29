@@ -66,6 +66,6 @@ sudo ln -s path_to_blender_executable /usr/local/bin
 
 1. Remove the current Blender installation: `sudo rm -rf /opt/blender`
 2. Obtain the blender tar.xz file from the official website.
-3. Rename the file to blender.tar.xz: `mv blenderv4.4.otar.xz blender.tar.xz`
-4. Extract the tar file to the correct path: `sudo tar -xf blender.tar.xz -C /opt`
+3. Extract the tar file to the correct path: `sudo tar -xf blender-<version>.tar.xz -C /opt`
+4. Rename the folder: `sudo mv /opt/blender-<version> /opt/blender`
 5. Remove the tar file `rm blender.tar.xz`

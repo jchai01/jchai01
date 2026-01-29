@@ -13,6 +13,7 @@ series = []
 Useful shortcuts I use with Firefox, but it should work in all modern browser.
 
 - Search bookmarks: `ctrl+b`
+- Hide/unhide bookmark bar: `crtl+shift+b`
 - Switching tabs, alternative to `alt+tab` & `alt+shift+tab`: `ctrl+PageUp/PageDown`
 - `alt+1` switches to the 1st tab, `alt+2` to 2nd tab, etc... `alt+9` for last tab
 - Move tabs: `Ctrl+Shift+Page Up/Down`

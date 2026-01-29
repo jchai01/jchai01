@@ -110,6 +110,22 @@ return {
 
 LSP auto formatting messes with vim marks and makes them disappear, haven't found a fix.
 
+## Disabling Format On Save for LSP
+
+
+Disable for current buffer: `<leader>uf`
+Save without format: `:noa w`
+
+Path: `~/.config/nvim/lua/plugins/astrolsp.lua`
+
+Set enabled to false:
+```
+format_on_save = {
+	enabled = false, -- enable or disable format on save globally
+    allow_filetypes = { -- enable format on save for specified filetypes only
+    -- "go",
+},
+```
 # Others
 
 - Ensure latest NodeJS is installed otherwise Javascript LSP won’t work. If you are not on a bleeding edge/rolling release distro, do not install NodeJS with your package manager as it will install older versions.

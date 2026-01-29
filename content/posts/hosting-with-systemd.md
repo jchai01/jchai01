@@ -113,6 +113,12 @@ Address each one process with the number given. For e.g. to get the logs for 1:
 
 You can actually treat a single unit file as a template ([docs over here](https://www.freedesktop.org/software/systemd/man/systemd.unit.html)).
 
+# Troubleshoot
+
+### code=exited, status=203/EXEC
+
+Put the command in a `.sh` file, make in executable and run that instead.
+
 # Ref
 
 https://www.cloudbees.com/blog/running-node-js-linux-systemd#creating-unit-files
