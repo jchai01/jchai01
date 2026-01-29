@@ -1,9 +1,9 @@
----
-title: "Dealing with NTFS drive in Linux"
-date: 2023-12-24T23:10:09Z
++++
+title = "Dealing with NTFS drive in Linux"
+date = 2023-12-24T23:10:09Z
 tags = ["linux"]
 categories = ["linux"]
----
++++
 
 # Mount NTFS in Arch
 
@@ -15,7 +15,7 @@ use `sudo fdisk -l` to find out the drive.
 sudo mount -t ntfs-3g /dev/sdc1 /mnt/
 ```
 
-# Fix NTFS HDD NTFS
+# Fix NTFS HDD
 
 ```bash
 sudo ntfsfix -b -d /dev/sda6
